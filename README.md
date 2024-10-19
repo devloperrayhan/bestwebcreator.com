@@ -121,7 +121,7 @@ file: webpack.config.dev.js
 file: webpack.config.prod.js
 
 ---------------------------------------------------------------------------
-View page : https://devloperrayhan.github.io/bestwebcreator.com/detail.html
+View page : https://devloperrayhan.github.io/bestwebcreator.com
 ---------------------------------------------------------------------------
 
 
