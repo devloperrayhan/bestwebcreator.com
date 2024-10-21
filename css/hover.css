@@ -1,0 +1,272 @@
+/* Hover Effect */
+.msg-pos:hover .msg{
+    height: 370px;
+    width: 362px;
+}
+.msg-user:hover{
+    color: var(--a-hover-color);
+}
+.msg-pos:hover .msg-card{
+    display: block;
+}
+.navbar-nav li a:hover{
+    color: var(--a-hover-color);
+}
+.Home:hover .Home-Sub{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.Collection a:hover::after{
+    width: 0%;
+}
+.Collection a:hover::before{
+    width: 0%;
+}
+.Collection a:hover{
+    color: var(--a-border-color) !important;
+}
+.Shop:hover .Shop-Sub{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.PRODUCT:hover .PRODUCT-Sub{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.chair a:hover{
+    color: var(--a-hover-color);
+}
+.chair a:hover::after{
+    width: 100%;
+}
+#SearchBtn:hover{
+    color: var( --main-color);
+}
+#SearchBtn:hover::after{
+    width: 0%;
+}
+#SearchBtn:hover::before{
+    width: 0%;
+}
+.search-pos:hover .search{
+    height: 300px;
+    opacity: 1;
+    visibility: visible;
+}
+.search-pos:hover #SearchBtn,.search-pos:hover #Search,.search-pos:hover .search-icon,.search-pos:hover .search{
+    opacity: 1;
+    visibility: visible;
+}
+.Grids:hover .Grids-Sub{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.Masonry:hover .Masonry-Sub{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.Singie-PostSingie-Post:hover .Singie-Post-Sab{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.List:hover .List-Sub{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.BLOG:hover .right-icon{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.right-icon > li:hover a::after{
+    transform: rotate(180deg);
+}
+.buttons a:nth-child(1):hover::after{
+    width: 0%;
+}
+.buttons a:nth-child(1):hover::before{
+    width: 0%;
+}
+.buttons a:nth-child(2):hover::after{
+    width: 0%;
+}
+.buttons a:nth-child(2):hover::before{
+    width: 0%;
+}
+.buttons a:nth-child(1):hover{
+    color: var(--a-msg-color);
+}
+.buttons a:nth-child(2):hover{
+    color: var( --a-hover-color);
+}
+.carousel-btn a:hover:after{
+    width: 50%;
+}
+.carousel-btn a:hover::before{
+    width: 50%;
+}
+.carousel-btn a:hover{
+    color: var(--main-color);
+}
+.card-btn a:hover::after{
+    width: 0%;
+}
+.card-btn a:hover::before{
+    width: 0%;
+}
+.card-btn a:hover{
+    color: var(--a-hover-color);
+}
+.img-btn a:hover{
+    background-color: var(--a-hover-color);
+    color: var(--bg-color);
+}
+.card:hover .img-btn{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover .card-btn a{
+    transform: translateY(-65px);
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover .card-img::after{
+    opacity: 1;
+    visibility: visible;
+}
+.card-body a:nth-child(1):hover{
+    color: var(--a-hover-color);
+}
+.new-collection a:hover{
+    color: var(--a-hover-color);
+}
+.img-hover-color:hover img{
+    transform: scale(1.1);
+}
+.img-hover-color:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+.col-11 a:hover{
+    color: var(--a-hover-color);
+}
+.Footer-txt-item li a:hover{
+    color: var(--a-hover-color);
+}
+.Footer-input input:focus{
+    outline: var(--tran);
+}
+.Copyright-txt p a:hover{
+    color: var(--a-hover-color);
+}
+.overflow img:hover{
+    transform: scale(1.1);
+}
+.Product-Detail-txt h2 a:hover{
+    color: var(--a-hover-color);
+}
+.breadcrumb-item :not(.active):hover{
+    color: var(--a-hover-color) !important;
+}
+#text:focus{
+    outline: var(--tran);
+    border: 1px solid var(--a-hover-color);
+}
+#email:focus{
+    outline: var(--tran);
+    border: 1px solid var(--a-hover-color);
+}
+#w3review:focus{
+    outline: var(--tran);
+    border: 1px solid var(--a-hover-color);
+}
+#btn:hover::after{
+    width: 0%;
+}
+#btn:hover::before{
+    width: 0%;
+}
+#btn:hover{
+    color: var(--a-hover-color);
+}
+.input-add input[value]:focus{
+    outline: transparent;
+}
+.add-product > i:hover{
+    color: var(--a-hover-color);
+}
+.tag a:hover{
+    color: var(--a-hover-color);
+}
+.share ul li a:hover{
+    color: var(--a-hover-color);
+}
+.subscribe-form [placeholder]:focus{
+    outline: transparent;
+}
+.subscribe-form button:hover{
+    border: 2px solid var(--tab-txt);
+    border-left: 2px solid var(--tran);
+    background-color: var( --a-msg-color);
+}
+.Footer-social-details ul li a:hover{
+    color: var(--a-hover-color);
+}
+.Team-img:hover .Team-Menu{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+.Team-img:hover .Team-img-1::after{
+    opacity: 1;
+    visibility: visible;
+}
+.Team-Menu ul li:hover{
+    background-color: var(--a-hover-color);
+}
+.Team-Menu ul li:hover a{
+    background-color: var(--a-hover-color);
+    color: var(--bg-color);
+}
+.contact-card:hover.contact-card i::after{
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+.contact-card:hover.contact-card i{
+    color: var(--bg-color);
+}
+.E-mail:hover{
+    color: var(--a-hover-color) !important;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--tran);
+    outline: 0;
+    box-shadow: none;
+}
+.log-in-btn a:hover{
+    color: var(--a-hover-color);
+    text-decoration: underline;
+}
+.checkbox [type="checkbox"]:checked{
+    accent-color: var(--a-hover-color) !important;
+}
+.Social-Login a:nth-child(1):hover{
+    background-color: var(--facebook-btn-hover);
+}
+.Social-Login a:nth-child(2):hover{
+    background-color: var(--google-btn-hover);
+}
+.Or-Option h6 a:hover{
+    color: var(--a-hover-color);
+}

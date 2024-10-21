@@ -1,0 +1,85 @@
+.Login{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 45px;
+}
+.log-in-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.log-in-btn a{
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--text-color);
+    transition: all 0.5s;
+    margin-bottom: 20px;
+}
+.form-check-label{
+    font-size: 17px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.checkbox [type="checkbox"]{
+    height: 18px;
+    width: 18px;
+    margin-bottom: 18px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+.Or-Option p{
+    position: relative;
+    text-align: center;
+}
+.Or-Option p::after{
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 0px;
+    height: 2px;
+    width: 255px;
+    background-color: var(--or-color);
+}
+.Or-Option p::before{
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0px;
+    height: 2px;
+    width: 255px;
+    background-color: var(--or-color);
+}
+.Social-Login{
+    text-align: center;
+}
+.Social-Login a i{
+    margin-right: 8px;
+}
+.Social-Login a{
+    display: inline-block;
+    color: var(--bg-color);
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+.Social-Login a:nth-child(1){
+    background-color: var(--facebook-btn-color);
+}
+.Social-Login a:nth-child(2){
+    background-color: var(--google-btn-color);
+}
+.Or-Option h6{
+    text-align: center;
+    margin-top: 29px;
+    font-weight: 400;
+}
+.Or-Option h6 a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s;
+    font-weight: 600;
+}

@@ -1,0 +1,46 @@
+/* color root Start */
+:root{
+    --main-color: #000000;
+    --text-color: #000;
+    --border-color-2: #eee;
+    --bg-color: #FFFFFF;
+    --red-color: #ff0000;
+    --green-color: #15d015;
+    --a-hover-color: #ff324d;
+    --border-color: rgba(100, 100, 100, 0.772);
+    --a-border-color: #FFF;
+    --a-msg-color: #333333;
+    --tran: transparent;
+    --start: gold;
+    --after-color: rgba(0, 0, 0, 0.3);
+    --Carousel-img-hover: #0000004a;
+    --new-collection-a: #ff324d32;
+    --instagram-btn-txt: #6d6d6da9;
+    --footer-bg-color: #202325;
+    --Product-Details-bg: #f7f8fb;
+    --tab-txt: #808080;
+    --tab-txt-border: #91919166;
+    --product-color-1st: #8c5c52;
+    --product-color-2st: #333333;
+    --product-color-3st: #da323f;
+    --subscribe: #ff324d;
+    --About-back: #f4f9fc;
+    --size-btn-color: #7d7d7d;
+    --About-Carousel-bg: #fff1f1;
+    --About-Carousel-txt: #7e8599;
+    --or-color: #7e859959;
+    --404-color: #333333;
+    --facebook-btn-color: #0866ff;
+    --facebook-btn-hover: #0867ffc5;
+    --google-btn-hover: #e34233be;
+    --google-btn-color: #e34133;
+}
+/* color root End */
+/* align root start */
+:root{
+    --body-font: 'Open Sans', sans-serif;
+    --big-font: 5rem;
+    --h2-font: 3.5rem;
+    --p-font: 1.1rem;
+}
+/* align root end */

@@ -1,0 +1,178 @@
+.About-txt p{ 
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-top: 30px;
+}
+.About-txt h1{
+    font-size: 33px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.About-card-title{
+    text-align: center;
+}
+.About-card-title .col-12 h3{
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.About-card-title .col-12 div{
+    width: 500px;
+    margin: auto;
+}
+.About-card-title .col-12 div p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.card-icon-About{
+    text-align: center;
+    margin-top: 30px;
+}
+.card-icon-About i{
+    font-size: 35px;
+    background-color: var(--a-hover-color);
+    color: var(--bg-color);
+    border-radius: 50px;
+    padding: 10px;
+}
+.About-card .card-body{
+    text-align: center;
+}
+.About-card .card-body h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+.About-card .card-body p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.About-card .card{
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Team-Name{
+    margin-top: 10px;
+}
+.Team-Name h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.Team-Name p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.Team-img{
+    position: relative;
+    width: 100.3%;
+    overflow: hidden;
+}
+.Team-Menu{
+    position: absolute;
+    top: 48%;
+    left: 13.7%;
+    transform: translateY(-170px);
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.Team-Menu ul{
+    display: flex;
+    padding-left: 0rem;
+}
+.Team-Menu ul li{
+    list-style: none;
+    margin-right: 10px;
+    height: 35px;
+    width: 35px;
+    background-color: var(--bg-color);
+    text-align: center;
+    transition: all 0.5s;
+}
+.Team-Menu ul li a{
+    color: var(--a-hover-color);
+    font-size: 25px;
+    background-color: var(--bg-color);
+    transition: all 0.5s;
+}
+.Team-img-1{
+    position: relative;
+}
+.Team-img-1::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 83.3%;
+    background-color: var(--after-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+.About-Carousel{
+    background-color: var(--About-Carousel-bg);
+    margin-top: 70px;
+}
+.About-Carousel .row h2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.Item-img img{
+    height: auto !important;
+    width: auto !important;
+}
+.Item-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Item-txt p{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 17px;
+    color: var(--About-Carousel-txt);
+}
+.owl-carousel-About{
+    margin-bottom: 50px;
+}
+.About-img-txt{
+    margin-left: 10px;
+}
+.About-img-txt h5{
+    margin-bottom: 0rem;
+}
+.Delivery{  
+    margin-top: 100px;
+}
+.Delivery-card{
+    border-right: 1px solid var(--tab-txt-border);
+}
+.Delivery-card i{
+    font-size: 50px;
+}
+.Delivery-card{
+    text-align: center;
+}
+.Delivery-card p{
+    font-size: 18px;
+    color: var(--About-Carousel-txt);
+}

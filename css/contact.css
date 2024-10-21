@@ -1,0 +1,45 @@
+.contact-card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-bottom: 25px;
+}
+.contact-card i{
+    font-size: 40px;
+    color: var(--a-hover-color);
+    border: 1px solid var(--a-hover-color);
+    border-radius: 50px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.contact-card p{
+    color: var(--About-Carousel-txt);
+}
+.contact-card i::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 0%;
+    width: 0%;
+    border-radius: 50px;
+    background-color: var(--a-hover-color);
+    transition: all 0.5s;
+    z-index: -1;
+}
+.E-mail{
+    color: var(--About-Carousel-txt) !important;
+    font-size: 17px !important;
+    transition: all 0.5s;
+}
+.contact p{
+    color: var(--About-Carousel-txt);
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
