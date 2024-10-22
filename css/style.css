@@ -921,9 +921,9 @@ i{
   content: "";
   position: absolute;
   top: 2px;
-  left: 2.5px;
-  height: 70%;
-  width: 70%;
+  left: 2.2px;
+  height: 73%;
+  width: 73%;
   border-radius: 50px;
   background-color: var(--main-color);
 }
@@ -1165,6 +1165,7 @@ i{
 .owl-nav{
   display: flex;
   justify-content: space-between;
+  /* transform: translate(10px, 100px); */
 }
 .play-carousel .item{
   overflow: hidden;
@@ -1350,3 +1351,43 @@ footer{
 .owl-nav button span{
   font-size: 45px;
 }
+/* Popup CSS Start */
+.modal-dialog{
+  max-width: 800px;
+}
+.modal-body{
+  padding: 0px 0px;
+}
+.modal-header{
+  border: none;
+}
+.popup .col-5{
+  padding: 0px 0px;
+}
+.popup .col-7{
+  padding: 10px 40px;
+}
+.modal-content{
+  border-radius: 0px;
+}
+.modal-txt{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.modal-txt h3{
+  font-size: 25px;
+  font-weight: 500;
+}
+.modal-txt p{
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.modal-header .btn-close{
+  margin-left: 369px;
+  margin-top: -26px;
+  margin-bottom: 6px;
+  padding: 10px 20px;
+}
+/* Popup CSS End */

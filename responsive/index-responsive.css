@@ -1,0 +1,51 @@
+@media only screen and (max-width: 2679px) {
+    .instagram-btn {
+        position: absolute;
+        top: 36%;
+        left: 43%;
+    }
+}
+@media only screen and (max-width: 1540px) {
+    .instagram-btn {
+        left: 38%;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .card{
+        width: 17rem !important;
+    }
+    .carousel-txt {
+        top: 13%;
+    }
+}
+@media only screen and (max-width: 1302px) {
+    .fluid-Width {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 1206px) {
+    .instagram-btn {
+        left: 35%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .card {
+        width: 14rem !important;
+    }
+    .list-txt p{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 1059px) {
+    .carousel-txt {
+        top: 0%;
+    }
+}
+@media only screen and (max-width: 995px) {
+    .item .card{
+        width: 18rem !important;
+    }
+    .col-1 i {
+        margin-bottom: 30px;
+    }
+}

@@ -12,6 +12,9 @@ $('.owl-carousel-1').owlCarousel({
         },
         1000:{
             items:4
+        },
+        1400:{
+            items:4
         }
     }
 });
@@ -23,7 +26,21 @@ owl.owlCarousel({
     margin:10,
     autoplay:true,
     autoplayTimeout:1000,
-    autoplayHoverPause:true
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        },
+        1400:{
+            items:4
+        }
+    }
 });
 $('.play').on('click',function(){
     owl.trigger('play.owl.autoplay',[1000])
@@ -79,12 +96,18 @@ owl.owlCarousel({
     loop:true,
     margin:10,
     autoplay:true,
+    // nav: true,
     autoplayTimeout:2000,
     autoplayHoverPause:true
 });
 $('.play').on('click',function(){
     owl.trigger('play.owl.autoplay',[1000])
-})
+});
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
-})
+});
+// $(document).ready(function(){
+//     setTimeout(function(){
+//         $("#exampleModalToggle").modal('show');
+//     },2000)
+// });

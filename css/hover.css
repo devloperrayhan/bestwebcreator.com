@@ -270,3 +270,6 @@
 .Or-Option h6 a:hover{
     color: var(--a-hover-color);
 }
+.modal-header .btn-close:focus{
+    box-shadow: none;
+}
