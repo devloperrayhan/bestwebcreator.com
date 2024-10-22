@@ -45,7 +45,7 @@
 
   <!-- jQuery CSS Link Start -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/css/xzoom.min.css">
+  <link rel="stylesheet" href="../css/xzoom.min.css">
   <!-- jQuery CSS Link End -->
 
   <!-- Linearicons icon css link Start -->
@@ -61,11 +61,14 @@
   <!-- Boortstrap CSS End -->
 
   <!-- CSS Link Start -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/hover.css">
-  <link rel="stylesheet" href="/css/root.css">
-  <link rel="stylesheet" href="/css/details.css">
-  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/hover.css">
+  <link rel="stylesheet" href="../css/root.css">
+  <link rel="stylesheet" href="../css/details.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/faq.css">
+  <link rel="stylesheet" href="../css/404.css">
+  <link rel="stylesheet" href="../css/login.css">
   <!-- CSS Link End -->
 </head>
 <body>
@@ -81,7 +84,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item Home"><a class="nav-link" href="index.html" style="color: #ff324d;">HOME<i class="fa-light fa-chevron-down"></i></a>
+                <li class="nav-item Home"><a class="nav-link" href="../index.html" style="color: #ff324d;">HOME<i class="fa-light fa-chevron-down"></i></a>
                   <ul class="Home-Sub">
                     <li><a href="#">Fashion 1</a></li>
                     <li><a href="#">Fashion 2</a></li>
@@ -93,7 +96,7 @@
                 </li>
                 <li class="nav-item Home"><a class="nav-link" href="#">PAGES<i class="fa-light fa-chevron-down"></i></a>
                   <ul class="Home-Sub">
-                    <li><a href="/page/about.html">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="faq.html">Faq</a></li>
                     <li><a href="404.html">404 Error Page</a></li>
@@ -320,13 +323,13 @@
       <div class="container-fluid" style="background-color: var(--Product-Details-bg);margin-top: 63px;">
         <div class="container">
           <div class="Product-Details">
-            <h2>Contact</h2>
+            <h2>Register</h2>
             <div class="Pagenation">
               <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-                  <li class="breadcrumb-item"><a href="/index.html">Pages</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                  <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="../index.html">Pages</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Register</li>
                 </ol>
               </nav>
             </div>
@@ -334,161 +337,138 @@
         </div>
       </div>
     <!-- Pagenation Section End -->
-    <!-- contact card Start -->
-      <section>
-        <div class="container">
-            <div class="row">
-              <div class="col-4">
-                <div class="card contact-card">
-                  <div class="card-body text-center">
-                    <i class="lnr lnr-map"></i>
-                    <h5 class="card-title">Address</h5>
-                    <p class="card-text">123 Street, Old Trafford, London, UK</p>
-                  </div>
+         <!--  Login from Section Start -->
+         <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+                        <div class="col-6">
+                            <div class="Login">
+                                <h3>Create an Account</h3>
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input style="width: 100%;" type="text" id="text" placeholder="Enter Your Name" required><br>
+                                        <input style="width: 100%;" type="text" id="text" placeholder="Enter Your Email" required><br>
+                                        <input style="width: 100%;" type="password" id="email" placeholder="Password" required><br>
+                                        <input style="width: 100%;" type="password" id="email" placeholder=" ConfirmPassword" required><br>
+                                        <div class="log-in-btn">
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="exampleCheck1" required>
+                                                <label class="form-check-label user-select-none" for="exampleCheck1">I agree to terms & Policy.</label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" id="btn" style="width: 100%;">Login</button>
+                                    </div>
+    
+                                    <div class="Or-Option">
+                                        <p>OR</p>
+                                        <div class="Social-Login">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
+                                            <a href="#"><i class="fa-brands fa-google"></i>Google</a>
+                                        </div>
+                                        <h6>Already have an account? <a href="login.html"> Log in</a></h6>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    <div class="col-3"></div>
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="card contact-card">
-                  <div class="card-body text-center">
-                    <i class="lnr lnr-envelope"></i>
-                    <h5 class="card-title">Email Address</h5>
-                    <a class="E-mail" href="mailto:devloperrayh@gmail.com">info@yourmail.com</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card contact-card">
-                  <div class="card-body text-center">
-                    <i class="lnr lnr-smartphone"></i>
-                    <h5 class="card-title">Phone</h5>
-                    <p class="card-text">+ 457 789 789 65</p>
-                  </div>
-                </div>
-              </div>
             </div>
-        </div>
-      </section>
-    <!-- contact card End -->
-    <!-- contact section Start -->
-      <section style="margin-top: 35px;">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <div class="contact">
-                <h2>Get In Touch</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus <br> blandit massa enim. Nullam id varius nunc id varius nunc.</p>
-                <form active="#" class="contact-form">
-                  <input style="margin-right: 8px;" type="text" placeholder="Enter Name *" id="text">
-                  <input style="margin-right: 0px;" type="email" placeholder="Entar Email *" id="text"><br>
-                  <input style="margin-right: 8px;" type="text" placeholder="Entar Phone *" id="text">
-                  <input style="margin-right: 0px;" type="text" placeholder="Enter Subject *" id="text"><br>
-                  <textarea rows="6" placeholder="Message *" id="w3review"></textarea><br>
-                  <button style="width: 100%;" type="submit" id="btn">Send Message</button>
-                </form>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29248.67788700499!2d89.82061151363958!3d23.601293817466388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe2534aaa4fc7f%3A0x4daf43ffdb19a28e!2sFaridpur!5e0!3m2!1sen!2sbd!4v1729507655048!5m2!1sen!2sbd" width="100%" height="525px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    <!-- contact section End -->
-<!-- Subscribe Section Start -->
+          </section>
+        <!--  Login from Section End-->
+        <!-- Subscribe Section Start -->
 <section id="subscribe">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="subscribe">
-          <h2>Subscribe Our Newsletter</h2>
-          <form active="#" class="subscribe-form">
-            <input type="text" placeholder="Enter Your Email">
-            <button type="submit">Subscribe</button>
-          </form>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="subscribe">
+            <h2>Subscribe Our Newsletter</h2>
+            <form active="#" class="subscribe-form">
+              <input type="text" placeholder="Enter Your Email">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
- </section>
-<!-- Subscribe Section End -->
-<!-- Footer-section Start -->
-<footer style="margin-top: 0px;">
-  <div class="container">
-    <div class="row">
-      <div class="col-4">
-        <h6 class="Footer-h6">Contact info</h6>
-        <div class="row">
-          <div class="col-1">
-            <i class="lnr lnr-map-marker"></i><br>
-            <i class="lnr lnr-envelope"></i><br>
-            <i class="lnr lnr-phone-handset"></i><br>
+   </section>
+  <!-- Subscribe Section End -->
+  <!-- Footer-section Start -->
+  <footer style="margin-top: 0px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h6 class="Footer-h6">Contact info</h6>
+          <div class="row">
+            <div class="col-1">
+              <i class="lnr lnr-map-marker"></i><br>
+              <i class="lnr lnr-envelope"></i><br>
+              <i class="lnr lnr-phone-handset"></i><br>
+            </div>
+            <div class="col-11">
+              <p> 123 Street, Old Trafford, NewYork, USA</p>
+              <a href="#">info@sitename.com</a>
+              <p> + 457 789 789 65</p>
+            </div>
           </div>
-          <div class="col-11">
-            <p> 123 Street, Old Trafford, NewYork, USA</p>
-            <a href="#">info@sitename.com</a>
-            <p> + 457 789 789 65</p>
-          </div>
+          <nav class="Footer-social Footer-social-details">
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-wordpress"></i></a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="Footer-social Footer-social-details">
-          <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-wordpress"></i></a></li>
+        <div class="col-2">
+          <h6 class="Footer-h6">Useful Links</h6>
+          <ul class="Footer-txt-item">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-        </nav>
-      </div>
-      <div class="col-2">
-        <h6 class="Footer-h6">Useful Links</h6>
-        <ul class="Footer-txt-item">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="#">Location</a></li>
-          <li><a href="#">Affiliates</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-2">
-        <h6 class="Footer-h6">My Account</h6>
-        <ul class="Footer-txt-item">
-          <li><a href="#">My Account</a></li>
-          <li><a href="#">Discount</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Orders History</a></li>
-          <li><a href="#">Order Tracking</a></li>
-        </ul>
-      </div>
-      <div class="col-4">
-        <h6 class="Footer-h6">Newsletter</h6>
-        <p>If you want to get an email from us every time we have a new special offer, then sign up here!</p>
-        <div class="Footer-input">
-          <input type="text" placeholder="Enter your email">
-          <button type="submit"><i class="lnr lnr-checkmark-circle"></i></button>
+        </div>
+        <div class="col-2">
+          <h6 class="Footer-h6">My Account</h6>
+          <ul class="Footer-txt-item">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Orders History</a></li>
+            <li><a href="#">Order Tracking</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h6 class="Footer-h6">Newsletter</h6>
+          <p>If you want to get an email from us every time we have a new special offer, then sign up here!</p>
+          <div class="Footer-input">
+            <input type="text" placeholder="Enter your email" required>
+            <button type="submit"><i class="lnr lnr-checkmark-circle"></i></button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-<!-- Copyright Footer Start -->
-<div class="Copyright">
-  <div class="Copyright-txt">
-    <p>Copyright © 2024. All rights reserved. Template by <a href="https://facebook.com/devloperrayhan" target="_blank">Developer Rayhan</a>.</p>
-  </div>
-  <div class="Copyright-img">
-    <div class="Footer-img">
-      <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/visa.png" alt="ERROR"></a>
-      <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/discover.png" alt="ERROR"></a>
-      <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/master_card.png" alt="ERROR"></a>
-      <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/paypal.png" alt="ERROR"></a>
-      <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/amarican_express.png" alt="ERROR"></a>
+  </footer>
+  <!-- Copyright Footer Start -->
+  <div class="Copyright">
+    <div class="Copyright-txt">
+      <p>Copyright © 2024. All rights reserved. Template by <a href="https://facebook.com/devloperrayhan" target="_blank">Developer Rayhan</a>.</p>
+    </div>
+    <div class="Copyright-img">
+      <div class="Footer-img">
+        <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/visa.png" alt="ERROR"></a>
+        <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/discover.png" alt="ERROR"></a>
+        <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/master_card.png" alt="ERROR"></a>
+        <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/paypal.png" alt="ERROR"></a>
+        <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/amarican_express.png" alt="ERROR"></a>
+      </div>
     </div>
   </div>
-</div>
-<!-- Copyright Footer Start -->
-<!-- Footer-section End -->
+  <!-- Copyright Footer Start -->
+  <!-- Footer-section End -->
 
   <!-- Boortstrap JS Start -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -497,11 +477,11 @@
   <!-- jQuery JS Link Start -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="/js/xzoom.min.js"></script>
+  <script src="../js/xzoom.min.js"></script>
   <!-- jQuery JS Link End -->
 
    <!-- App JS Start -->
-   <script src="/js/app.js"></script>
+   <script src="../js/app.js"></script>
    <!-- App JS End -->
 
   <!-- Linearicons icon js link Start -->

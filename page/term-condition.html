@@ -45,7 +45,7 @@
 
   <!-- jQuery CSS Link Start -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/css/xzoom.min.css">
+  <link rel="stylesheet" href="../css/xzoom.min.css">
   <!-- jQuery CSS Link End -->
 
   <!-- Linearicons icon css link Start -->
@@ -61,15 +61,42 @@
   <!-- Boortstrap CSS End -->
 
   <!-- CSS Link Start -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/hover.css">
-  <link rel="stylesheet" href="/css/root.css">
-  <link rel="stylesheet" href="/css/details.css">
-  <link rel="stylesheet" href="/css/contact.css">
-  <link rel="stylesheet" href="/css/faq.css">
-  <link rel="stylesheet" href="/css/404.css">
-  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/hover.css">
+  <link rel="stylesheet" href="../css/root.css">
+  <link rel="stylesheet" href="../css/details.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/faq.css">
+  <link rel="stylesheet" href="../css/404.css">
+  <link rel="stylesheet" href="../css/login.css">
   <!-- CSS Link End -->
+
+  <!-- CSS Start-->
+    <style>
+        .Terms-text h3{
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+        .Terms-text p{
+            font-size: 18px;
+            color: var(--About-Carousel-txt);
+        }
+        .Terms-text ul{
+            padding-left: 1rem;
+        }
+        .Terms-text .list-style li{
+            list-style: decimal;
+            color: var(--About-Carousel-txt);
+        }
+        .Terms-text ul li{
+            font-size: 18px;
+            color: var(--About-Carousel-txt);
+        }
+        .Terms-text hr{
+            color: #ff324d !important
+        }
+    </style>
+  <!-- CSS End -->
 </head>
 <body>
     <!-- Nav Bar Start -->
@@ -84,7 +111,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item Home"><a class="nav-link" href="index.html" style="color: #ff324d;">HOME<i class="fa-light fa-chevron-down"></i></a>
+                <li class="nav-item Home"><a class="nav-link" href="../index.html" style="color: #ff324d;">HOME<i class="fa-light fa-chevron-down"></i></a>
                   <ul class="Home-Sub">
                     <li><a href="#">Fashion 1</a></li>
                     <li><a href="#">Fashion 2</a></li>
@@ -323,13 +350,13 @@
       <div class="container-fluid" style="background-color: var(--Product-Details-bg);margin-top: 63px;">
         <div class="container">
           <div class="Product-Details">
-            <h2>Register</h2>
+            <h2>Terms And Conditions</h2>
             <div class="Pagenation">
               <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-                  <li class="breadcrumb-item"><a href="/index.html">Pages</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Register</li>
+                  <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="../index.html">Pages</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Terms And Conditions</li>
                 </ol>
               </nav>
             </div>
@@ -337,46 +364,39 @@
         </div>
       </div>
     <!-- Pagenation Section End -->
-         <!--  Login from Section Start -->
-         <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-3"></div>
-                        <div class="col-6">
-                            <div class="Login">
-                                <h3>Create an Account</h3>
-                                <form action="#">
-                                    <div class="form-group">
-                                        <input style="width: 100%;" type="text" id="text" placeholder="Enter Your Name" required><br>
-                                        <input style="width: 100%;" type="text" id="text" placeholder="Enter Your Email" required><br>
-                                        <input style="width: 100%;" type="password" id="email" placeholder="Password" required><br>
-                                        <input style="width: 100%;" type="password" id="email" placeholder=" ConfirmPassword" required><br>
-                                        <div class="log-in-btn">
-                                            <div class="checkbox">
-                                                <input type="checkbox" id="exampleCheck1" required>
-                                                <label class="form-check-label user-select-none" for="exampleCheck1">I agree to terms & Policy.</label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" id="btn" style="width: 100%;">Login</button>
-                                    </div>
-    
-                                    <div class="Or-Option">
-                                        <p>OR</p>
-                                        <div class="Social-Login">
-                                            <a href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
-                                            <a href="#"><i class="fa-brands fa-google"></i>Google</a>
-                                        </div>
-                                        <h6>Already have an account? <a href="login.html"> Log in</a></h6>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    <div class="col-3"></div>
-                </div>
-            </div>
-          </section>
-        <!--  Login from Section End-->
-        <!-- Subscribe Section Start -->
+    <!-- Terms text Section Start -->
+     <section>
+       <div class="container">
+         <div class="row">
+           <div class="col-12">
+             <div class="Terms-text">
+               <h3>Our Terms & Conditions</h3>
+               <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like</p>
+               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+               <hr>
+               <h3>Where does it come from?</h3>
+               <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like</p>
+               <ul class="list-style">
+                <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</li>
+                <li>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</li>
+                <li>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</li>
+                <li>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</li>
+               </ul>
+               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+               <hr>
+               <h3>Why do we use it?</h3>
+               <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</p>
+               <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+               <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                <li>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</li>
+               </ul>
+         </div>
+       </div>
+     </section>
+    <!-- Terms text Section End -->
+         <!-- Subscribe Section Start -->
 <section id="subscribe">
     <div class="container">
       <div class="row">
@@ -477,11 +497,11 @@
   <!-- jQuery JS Link Start -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="/js/xzoom.min.js"></script>
+  <script src="../js/xzoom.min.js"></script>
   <!-- jQuery JS Link End -->
 
    <!-- App JS Start -->
-   <script src="/js/app.js"></script>
+   <script src="../js/app.js"></script>
    <!-- App JS End -->
 
   <!-- Linearicons icon js link Start -->

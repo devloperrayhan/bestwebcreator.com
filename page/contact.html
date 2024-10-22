@@ -45,7 +45,7 @@
 
   <!-- jQuery CSS Link Start -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/css/xzoom.min.css">
+  <link rel="stylesheet" href="../css/xzoom.min.css">
   <!-- jQuery CSS Link End -->
 
   <!-- Linearicons icon css link Start -->
@@ -61,13 +61,11 @@
   <!-- Boortstrap CSS End -->
 
   <!-- CSS Link Start -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/hover.css">
-  <link rel="stylesheet" href="/css/root.css">
-  <link rel="stylesheet" href="/css/details.css">
-  <link rel="stylesheet" href="/css/contact.css">
-  <link rel="stylesheet" href="/css/faq.css">
-  <link rel="stylesheet" href="/css/404.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/hover.css">
+  <link rel="stylesheet" href="../css/root.css">
+  <link rel="stylesheet" href="../css/details.css">
+  <link rel="stylesheet" href="../css/contact.css">
   <!-- CSS Link End -->
 </head>
 <body>
@@ -83,7 +81,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item Home"><a class="nav-link" href="index.html" style="color: #ff324d;">HOME<i class="fa-light fa-chevron-down"></i></a>
+                <li class="nav-item Home"><a class="nav-link" href="../index.html" style="color: #ff324d;">HOME<i class="fa-light fa-chevron-down"></i></a>
                   <ul class="Home-Sub">
                     <li><a href="#">Fashion 1</a></li>
                     <li><a href="#">Fashion 2</a></li>
@@ -95,7 +93,7 @@
                 </li>
                 <li class="nav-item Home"><a class="nav-link" href="#">PAGES<i class="fa-light fa-chevron-down"></i></a>
                   <ul class="Home-Sub">
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="/page/about.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="faq.html">Faq</a></li>
                     <li><a href="404.html">404 Error Page</a></li>
@@ -322,13 +320,13 @@
       <div class="container-fluid" style="background-color: var(--Product-Details-bg);margin-top: 63px;">
         <div class="container">
           <div class="Product-Details">
-            <h2>Page Not Found</h2>
+            <h2>Contact</h2>
             <div class="Pagenation">
               <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-                  <li class="breadcrumb-item"><a href="/index.html">Pages</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">404</li>
+                  <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="../index.html">Pages</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
                 </ol>
               </nav>
             </div>
@@ -336,31 +334,69 @@
         </div>
       </div>
     <!-- Pagenation Section End -->
-    <!-- 404 Section Start -->
-     <section>
-      <div class="container">
-        <div class="row">
-         <div class="col-3"></div>
-         <div class="col-6">
-          <div class="col-12  page-404">
-            <h1>404</h1>
-            <h3>oops! The page you requested was not found!</h3>
-            <p>The page you are looking for was moved, removed, renamed or <br> might never existed.</p>
-            <form action="#">
-                <div id="Search-404">
-                  <input type="search" class="Search-input-404" placeholder="Search" required id="text" style="width: 80%; padding-right: 22px;">
-                  <button type="submit" class="search-i-404"><i class="lnr lnr-magnifier"></i></button>
+    <!-- contact card Start -->
+      <section>
+        <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="card contact-card">
+                  <div class="card-body text-center">
+                    <i class="lnr lnr-map"></i>
+                    <h5 class="card-title">Address</h5>
+                    <p class="card-text">123 Street, Old Trafford, London, UK</p>
+                  </div>
                 </div>
-              <a href="/index.html" id="btn" class="Back-404">Back To Home</a>
-            </form>
-          </div>
-         </div>
-         <div class="col-3"></div>
+              </div>
+              <div class="col-4">
+                <div class="card contact-card">
+                  <div class="card-body text-center">
+                    <i class="lnr lnr-envelope"></i>
+                    <h5 class="card-title">Email Address</h5>
+                    <a class="E-mail" href="mailto:devloperrayh@gmail.com">info@yourmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card contact-card">
+                  <div class="card-body text-center">
+                    <i class="lnr lnr-smartphone"></i>
+                    <h5 class="card-title">Phone</h5>
+                    <p class="card-text">+ 457 789 789 65</p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-      </div>
-     </section>
-    <!-- 404 Section End -->
-       <!-- Subscribe Section Start -->
+      </section>
+    <!-- contact card End -->
+    <!-- contact section Start -->
+      <section style="margin-top: 35px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="contact">
+                <h2>Get In Touch</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus <br> blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                <form active="#" class="contact-form">
+                  <input style="margin-right: 8px;" type="text" placeholder="Enter Name *" id="text">
+                  <input style="margin-right: 0px;" type="email" placeholder="Entar Email *" id="text"><br>
+                  <input style="margin-right: 8px;" type="text" placeholder="Entar Phone *" id="text">
+                  <input style="margin-right: 0px;" type="text" placeholder="Enter Subject *" id="text"><br>
+                  <textarea rows="6" placeholder="Message *" id="w3review"></textarea><br>
+                  <button style="width: 100%;" type="submit" id="btn">Send Message</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29248.67788700499!2d89.82061151363958!3d23.601293817466388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe2534aaa4fc7f%3A0x4daf43ffdb19a28e!2sFaridpur!5e0!3m2!1sen!2sbd!4v1729507655048!5m2!1sen!2sbd" width="100%" height="525px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- contact section End -->
+<!-- Subscribe Section Start -->
 <section id="subscribe">
   <div class="container">
     <div class="row">
@@ -429,7 +465,7 @@
         <h6 class="Footer-h6">Newsletter</h6>
         <p>If you want to get an email from us every time we have a new special offer, then sign up here!</p>
         <div class="Footer-input">
-          <input type="text" placeholder="Enter your email" required>
+          <input type="text" placeholder="Enter your email">
           <button type="submit"><i class="lnr lnr-checkmark-circle"></i></button>
         </div>
       </div>
@@ -461,11 +497,11 @@
   <!-- jQuery JS Link Start -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="/js/xzoom.min.js"></script>
+  <script src="../js/xzoom.min.js"></script>
   <!-- jQuery JS Link End -->
 
    <!-- App JS Start -->
-   <script src="/js/app.js"></script>
+   <script src="../js/app.js"></script>
    <!-- App JS End -->
 
   <!-- Linearicons icon js link Start -->
