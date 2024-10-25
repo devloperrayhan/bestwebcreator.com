@@ -484,7 +484,7 @@ i{
   justify-content: space-between;
 }
 .nav-item a{
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--text-color);
 }
@@ -1391,3 +1391,9 @@ footer{
   padding: 10px 20px;
 }
 /* Popup CSS End */
+.offcanvas-body{
+  overflow: hidden
+}
+.offcanvas.offcanvas-end.show{
+  width: 100%;
+}
