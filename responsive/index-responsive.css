@@ -36,11 +36,6 @@
         top: 0%;
     }
 }
-@media only screen and (max-width: 995px) {
-    .col-1 i {
-        margin-bottom: 30px;
-    }
-}
 @media only screen and (max-width: 992px) {
     .none-992{
         display: none !important;
@@ -140,13 +135,15 @@
         margin: auto;
     }
 }
-
 @media only screen and (min-width: 854px) {
     
 }
 @media only screen and (min-width: 768px) {
     .col-1 i {
         margin-bottom: 15px;
+    }
+    .Delivery-card {
+        border-right: none;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -155,11 +152,38 @@
         padding-left: 0px !important;
     }
 }
+@media only screen and (max-width: 1200px){
+    .Shop-Sub {
+        left: -765% !important;
+    }
+    .PRODUCT-Sub {
+        left: -498%;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .Shop-Sub {
+        left: -900% !important;
+    }
+    .PRODUCT-Sub {
+        left: -483%;
+    }
+}
 @media only screen and (max-width: 992px) {
     .menu-icon ul {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 0rem;
+    }
+    .subscribe {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Team-img-1::after {
+        width: 100%;
+    }
+    .Delivery-card {
+        border-right: 1px solid var(--tab-txt-border);
     }
 }
 @media only screen and (min-width: 700px) {
@@ -173,5 +197,52 @@
         flex-direction: row;
     }
 }
-@media only screen and (min-width: 444px) {}
-@media only screen and (min-width: 444px) {}
+@media only screen and (max-width: 444px) {
+    .subscribe {
+        flex-direction: column;
+    }
+    .Team-img-1::after {
+        width: 49.3%;
+        left: 131px;
+    }
+    ._Team .col-12{
+            text-align: center;
+    }
+    .Team-Menu {
+        left: 33.7%;
+    }    
+    .Delivery-card {
+        border-bottom: 1px solid var(--tab-txt-border);
+        border-right: none;
+        margin-bottom: 18px;
+    }    
+    .About-card-title .col-12 div {
+        width: 320px !important;
+    }
+}
+@media only screen and (max-width: 482px) {
+    .subscribe-form [placeholder] {
+        width: 230px;
+    }
+}
+@media only screen and (max-width: 404px) {
+    .subscribe-form [placeholder] {
+        width: 180px;
+    }
+    .Team-img-1::after {
+        width: 75.5%;
+        left: 41px;
+    }
+    .Team-Menu {
+        left: 25.7%;
+    }
+    #Search {
+        width: 236px;
+    }
+    .search {
+        width: 360px;
+    }    
+    .msg {
+        right: -15px;
+    }
+}
