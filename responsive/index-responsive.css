@@ -130,6 +130,9 @@
         margin-top: 43px;
         margin-bottom: 20px;
     }
+    .overflow[style="height: 70%"]{
+        height: 100% !important;
+    }
 }
 @media only screen and (min-width: 444px) {
     .instagram-btn {
@@ -145,6 +148,10 @@
     }
     .Delivery-card {
         border-right: none;
+    }
+    .new-collection2 {
+        top: 40%;
+        left: 50%;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -200,19 +207,32 @@
 }
 @media only screen and (max-width: 660px) {
     .carousel-txt {
-        top: 11%;    
+        top: 25%;    
         left: 4%;
     }
     .carousel-p {
         width: 50%;
     }
     .new-collection2 {
-        top: 40px;
+        top: 40%;
+        left: 50%;
     }
 }
 @media only screen and (max-width: 512px) {
     .carousel-txt h1 {
         font-size: 45px;
+    }    
+    .search-i-404 {
+        right: 60px;
+    }
+    .Back-404 {
+        width: 66% !important;
+    }
+    .Or-Option p::before {
+        width: 45%;
+    }    
+    .Or-Option p::after {
+        width: 45%;
     }    
 }
 @media only screen and (min-width: 992px) {
