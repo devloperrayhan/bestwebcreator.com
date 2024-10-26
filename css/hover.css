@@ -225,7 +225,7 @@
     opacity: 1;
     visibility: visible;
 }
-.Team-img:hover .Team-img-1::after{
+.Team-img:hover .Team-img-1 span::after{
     opacity: 1;
     visibility: visible;
 }

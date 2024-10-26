@@ -22,7 +22,8 @@
 }
 @media only screen and (max-width: 1206px) {
     .instagram-btn {
-        left: 35%;
+        left: 0%;
+        padding: 18px 100px;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -186,10 +187,33 @@
         border-right: 1px solid var(--tab-txt-border);
     }
 }
+@media only screen and (max-width:600px) {
+    .logo-carousel .item img {
+        margin-left: 30% !important;
+    }
+}
 @media only screen and (min-width: 700px) {
     .instagram-btn {
-        top: 21%;
+        top: 20%;
+        left: 30%;
     }
+}
+@media only screen and (max-width: 660px) {
+    .carousel-txt {
+        top: 11%;    
+        left: 4%;
+    }
+    .carousel-p {
+        width: 50%;
+    }
+    .new-collection2 {
+        top: 40px;
+    }
+}
+@media only screen and (max-width: 512px) {
+    .carousel-txt h1 {
+        font-size: 45px;
+    }    
 }
 @media only screen and (min-width: 992px) {
     .Copyright {
@@ -223,6 +247,11 @@
 @media only screen and (max-width: 482px) {
     .subscribe-form [placeholder] {
         width: 230px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .carousel-p{
+        width: 80%;
     }
 }
 @media only screen and (max-width: 404px) {

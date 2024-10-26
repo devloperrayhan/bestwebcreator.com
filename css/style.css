@@ -689,6 +689,8 @@ i{
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .bg-img-3{
   background-image: url("https://bestwebcreator.com/shopwise/demo/assets/images/menu_banner33.jpg");
@@ -1396,4 +1398,13 @@ footer{
 }
 .offcanvas.offcanvas-end.show{
   width: 100%;
+}
+.card {
+  margin: 0px auto 40px auto;
+}
+.carousel-item img{
+    width: 100% !important;
+    height: 500px;
+    object-fit: cover;
+    object-position: 77%;
 }
