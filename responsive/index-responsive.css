@@ -22,8 +22,8 @@
 }
 @media only screen and (max-width: 1206px) {
     .instagram-btn {
-        left: 0%;
-        padding: 18px 100px;
+        left: 4.5%;
+        padding: 18px 95px;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -61,6 +61,10 @@
     }
     .dropdown-menu.show li a{
         font-size: 15px !important;
+    }
+    .modal-header .btn-close {
+        margin-left: 98%;
+        margin-top: -10px;
     }
 }
 @media only screen and (max-width: 922px) {
@@ -207,7 +211,7 @@
 }
 @media only screen and (max-width: 660px) {
     .carousel-txt {
-        top: 25%;    
+        top: 20%;    
         left: 4%;
     }
     .carousel-p {
@@ -271,7 +275,7 @@
 }
 @media only screen and (max-width: 768px) {
     .carousel-p{
-        width: 80%;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 404px) {

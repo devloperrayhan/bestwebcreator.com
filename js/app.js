@@ -116,11 +116,11 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 });
-// $(document).ready(function(){
-//     setTimeout(function(){
-//         $("#exampleModalToggle").modal('show');
-//     },2000)
-// });
+$(document).ready(function(){
+    setTimeout(function(){
+        $("#exampleModalToggle").modal('show');
+    },2000)
+});
 $(".nav-item.dropdown .nav-link").click(function(){
     $(this).next(".dropdown-menu").slideToggle();
 });
