@@ -155,6 +155,9 @@
     opacity: 1;
     visibility: visible;
 }
+.Day-Text a:hover{
+    color: var(--a-hover-color);
+}
 .col-11 a:hover{
     color: var(--a-hover-color);
 }

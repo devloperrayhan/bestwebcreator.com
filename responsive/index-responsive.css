@@ -14,6 +14,15 @@
     .carousel-txt {
         top: 13%;
     }
+    .margin-1400{
+        margin-right: 1% !important;
+    }
+    .tab-from [action] button#btn{
+        width: 30% !important;
+    }
+    .Day-Text.price-list_icon{
+        padding-right: 33px !important;
+    }
 }
 @media only screen and (max-width: 1302px) {
     .fluid-Width {
@@ -171,6 +180,10 @@
     .PRODUCT-Sub {
         left: -498%;
     }
+    .col-12.col-xl-6 .xzoom-container{
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 @media only screen and (min-width: 1200px){
     .Shop-Sub {
@@ -267,6 +280,15 @@
     .About-card-title .col-12 div {
         width: 320px !important;
     }
+    .input-add{
+        margin-bottom: 20px;
+    }
+    .add-product button {
+        margin-left: 2px;
+    }    
+    .Product-Details {
+        flex-direction: column;
+    }
 }
 @media only screen and (max-width: 482px) {
     .subscribe-form [placeholder] {
@@ -276,6 +298,9 @@
 @media only screen and (max-width: 768px) {
     .carousel-p{
         width: 100%;
+    }
+    .Day-Text.price-list_icon{
+        padding-right: 33px !important;
     }
 }
 @media only screen and (max-width: 404px) {
@@ -297,5 +322,24 @@
     }    
     .msg {
         right: -15px;
+    }
+    .Detail-price {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 483px) {
+    .tab-from [action] input[type="text"]#text{
+        width: 100%;
+    }
+    .tab-from [action] input[type="email"]#email{
+        width: 100%;
+    }
+    .tab-from [action] button#btn{
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .col-1.price-list_icon {
+        padding-right: 27px !important;
     }
 }
