@@ -276,3 +276,9 @@
 .modal-header .btn-close:focus{
     box-shadow: none;
 }
+.dropdown-item:focus, .dropdown-item:hover:hover{
+    background-color: var(--tran) !important;
+}
+.right-icon_2 > li > a:hover:after{
+    transform: rotate(90deg) !important;
+}

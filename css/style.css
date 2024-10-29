@@ -604,11 +604,21 @@ i{
   z-index: -1;
 }
 .Collection p,.PRODUCT-Sub p{
-  color: var(--bg-color);
+  color: var(--text-color);
   font-size: 18px;
   font-weight: 600;
   padding-left: 5px;
   margin-bottom: 15px;
+}
+.p_text_color{
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 5px;
+  margin-bottom: 15px;
+}
+.Collection p{
+  color: var(--bg-color);
 }
 .Collection h5{
   color: var(--a-border-color);
@@ -1401,9 +1411,6 @@ footer{
   padding: 10px 20px;
 }
 /* Popup CSS End */
-.offcanvas-body{
-  overflow: hidden
-}
 .offcanvas.offcanvas-end.show{
   width: 100%;
 }
@@ -1415,4 +1422,31 @@ footer{
     height: 500px;
     object-fit: cover;
     object-position: 77%;
+}
+.dropdown-item.container .row nav ul li{
+  list-style: none !important;
+}
+.dropdown-item.container .row nav ul{
+  padding-left: 0rem;
+}
+.dropdown-item.container .row ul li{
+  list-style: none !important;
+}
+.dropdown-item.container .row ul{
+  padding-left: 0rem;
+}
+.dropdown-item.container .row p{
+  margin-top: 10px;
+}
+.right-icon_2 > li > a::after{
+  content: "\f054";
+  position: absolute;
+  top: 10px;
+  left: 185px;
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  transition: all 0.5s;
+}
+.dropdown-item.container {
+  max-width: initial;
 }

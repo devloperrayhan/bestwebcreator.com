@@ -60,7 +60,7 @@
         width: 229%;
     }
     .nav-item.dropdown.nav-item .nav-link[role="button"]{
-        width: 200%;
+        width: 100%;
     }
     .dropdown-menu{
         border: none;
