@@ -371,9 +371,6 @@ i{
   z-index: -1;
   transition: all 0.5s;
 }
-.msg-card{
-  margin: 6px;
-}
 .msg-user h4{
   font-size: 15px;
 }

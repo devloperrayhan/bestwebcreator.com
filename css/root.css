@@ -20,9 +20,14 @@
     --Product-Details-bg: #f7f8fb;
     --tab-txt: #808080;
     --tab-txt-border: #91919166;
-    --product-color-1st: #8c5c52;
-    --product-color-2st: #333333;
-    --product-color-3st: #da323f;
+    --product-color-1: #8c5c52;
+    --product-color-2: #333333;
+    --product-color-3: #da323f;
+    --product-color-4: #2f366c;
+    --product-color-5: #b5b6bb;
+    --product-color-6: #b9c2df;
+    --product-color-7: #5fb7d4;
+    --product-color-8: #2f366c;
     --subscribe: #ff324d;
     --About-back: #f4f9fc;
     --size-btn-color: #7d7d7d;
@@ -35,6 +40,10 @@
     --google-btn-hover: #e34233be;
     --google-btn-color: #e34133;
     --img-bg: #f4f9fc;
+    --border-color-1: #a3a3a36b;
+    --card-align-icon-border: #ced4da;
+    --badge-bg: #ff9f00;
+    --email-box: #dee2e6;
 }
 /* color root End */
 /* align root start */

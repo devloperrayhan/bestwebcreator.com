@@ -222,13 +222,28 @@ div#pills-tabContent{
     border: 2px solid var(--bg-color);
 }
 .color-btn :nth-child(1){
-    background-color: var(--product-color-1st);
+    background-color: var(--product-color-1);
 }
 .color-btn :nth-child(2){
-    background-color: var(--product-color-2st);
+    background-color: var(--product-color-2);
 }
 .color-btn :nth-child(3){
-    background-color: var(--product-color-3st);
+    background-color: var(--product-color-3);
+}
+.color-btn :nth-child(4){
+    background-color: var(--product-color-4);
+}
+.color-btn :nth-child(5){
+    background-color: var(--product-color-5);
+}
+.color-btn :nth-child(6){
+    background-color: var(--product-color-6);
+}
+.color-btn :nth-child(7){
+    background-color: var(--product-color-7);
+}
+.color-btn :nth-child(8){
+    background-color: var(--product-color-8);
 }
 .size h6{
     margin-bottom: 0px;

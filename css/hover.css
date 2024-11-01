@@ -282,3 +282,61 @@
 .right-icon_2 > li > a:hover:after{
     transform: rotate(90deg) !important;
 }
+.form-select:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
+.icon_card i:hover{
+    background-color: var(--a-hover-color);
+    color: var(--bg-color);
+}
+.icon_card :nth-child(2) i:hover{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.page-link:focus {
+    z-index: 3;
+    color: var(--bg-color);
+    background-color: var(--a-hover-color);
+    outline: 0;
+    box-shadow: none;
+}
+.page-link:hover {
+    z-index: 3;
+    color: var(--bg-color);
+    background-color: var(--a-hover-color);
+    outline: 0;
+    box-shadow: none;
+    border: 2px solid var(--a-hover-color);
+}
+.category-of-left-sidebar li:hover a{
+    color: var(--a-hover-color);
+}
+.category-of-left-sidebar li:hover span{
+    color: var(--a-hover-color);
+}
+.category-of-left-sidebar li:hover{
+    color: var(--a-hover-color);
+}
+.table-row td a:hover{
+    color: var(--a-hover-color);
+}
+.table-row td i[class]:hover{
+    background-color: var(--a-hover-color);
+    color: var(--bg-color);
+}
+.form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe !important;
+    outline: 0;
+    box-shadow: none;
+}
+.shop-left-card:hover .rating{
+    opacity: 0;
+    visibility: hidden;
+}
+.shop-left-card:hover .color-btn{
+    transform: translateY(-35px);
+}
