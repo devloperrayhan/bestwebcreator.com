@@ -75,7 +75,49 @@
   <link rel="stylesheet" href="../responsive/index-responsive.css">
   <!-- Responsive CSS Link End -->
 </head>
-<body>
+<body onload="preloader()" onoffline="offline()" ononline="online()">
+
+  <!-- Preloader Section Start -->
+   <section>
+      <div id="preloader">
+          <div id="loader"></div>
+      </div>
+   </section>
+  <!-- Preloader Section End -->
+  <!-- Offline Msg -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast-offline" class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="border-radius: 0px;border: none;">
+      <div class="toast-header">
+        <img style="height: 25px;" src="https://bestwebcreator.com/shopwise/demo/assets/images/logo_dark.png" class="rounded me-2" alt="ERROR">
+        <strong class="me-auto"></strong>
+        <small>1 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        You are currently offline
+        <br>
+      </div>
+      <button style="width: 50%;" class="m-2" id="btn">Refresh</button>
+    </div>
+  </div>
+  <!-- Offline Msg -->
+  <!-- Online Msg -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast-online" class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="border-radius: 0px;border: none;">
+      <div class="toast-header">
+        <img style="height: 25px;" src="https://bestwebcreator.com/shopwise/demo/assets/images/logo_dark.png" class="rounded me-2" alt="ERROR">
+        <strong class="me-auto"></strong>
+        <small>1 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        You are currently Online
+        <br>
+      </div>
+      <button style="width: 50%;" type="button" class="m-2" data-bs-dismiss="toast" aria-label="Close" id="btn">Close</button>
+    </div>
+  </div>
+  <!-- Online Msg -->
     <!-- Nav Bar Start -->
     <header>
       <nav class="navbar navbar-expand-lg">

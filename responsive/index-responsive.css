@@ -164,7 +164,7 @@
     }
     .new-collection2 {
         top: 40%;
-        left: 50%;
+        left: 10%;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -231,8 +231,8 @@
         width: 50%;
     }
     .new-collection2 {
-        top: 40%;
-        left: 50%;
+        top: 30%;
+        left: 10%;
     }
 }
 @media only screen and (max-width: 512px) {

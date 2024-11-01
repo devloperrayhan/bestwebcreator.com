@@ -1,3 +1,13 @@
+
+function preloader(){
+    $("#preloader").delay(5000).fadeOut();
+}
+function offline(){
+    $("#liveToast-offline.toast").toast("show")
+}
+function online(){
+    $("#liveToast-online.toast").toast("show")
+}
 $('.owl-carousel-1').owlCarousel({
     rtl:true,
     loop:true,
@@ -116,11 +126,11 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 });
-// $(document).ready(function(){
-    // setTimeout(function(){
-        // $("#exampleModalToggle").modal('show');
-    // },2000)
-// });
+$(document).ready(function(){
+    setTimeout(function(){
+        $("#exampleModalToggle").modal('show');
+    },7000)
+});
 $(".nav-item.dropdown .nav-link").click(function(){
     $(this).next(".dropdown-menu").slideToggle();
 });

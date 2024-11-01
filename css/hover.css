@@ -340,3 +340,8 @@
 .shop-left-card:hover .color-btn{
     transform: translateY(-35px);
 }
+.btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+    opacity: 1;
+}
