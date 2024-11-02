@@ -621,125 +621,363 @@
     <!-- Pagenation Section End -->
     <!-- cart Section Start -->
     <section>
-        <div class="container">
-            <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-none d-xl-block">
+            <table class="table">
+              <thead style="text-align: center;">
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" style="text-align: left;">Product</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Total</th>
+                  <th scope="col">Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr class="table-row close-1">
+                    <td scope="row">
+                      <div class="img-cart-in-table">
+                        <a href="#"> <img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img1.jpg" alt="ERROR"></a>
+                      </div>
+                    </td>
+                    <td><a href="#">Blue Dress For Woman</a></td>
+                    <td>$45.00</td>
+                    <td>
+                      <div class="input-add input-add-1">
+                        <i class="fa-solid fa-minus user-select-none"></i>
+                        <input value="1" id="input" min="0">
+                        <i class="fa-solid fa-plus user-select-none"></i>
+                      </div>
+                    </td>
+                    <td>$90.00</td>
+                    <td><i class="lnr lnr-cross close-btn_1"></i></td>
+                  </tr>
+                  <tr class="table-row close-2">
+                    <td scope="row">
+                      <div class="img-cart-in-table">
+                        <a href="#"> <img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img2.jpg" alt="ERROR"></a>
+                      </div>
+                    </td>
+                    <td><a href="#">Lether Gray Tuxedo</a></td>
+                    <td>$55.00</td>
+                    <td>
+                      <div class="input-add input-add-2">
+                        <i class="fa-solid fa-minus user-select-none"></i>
+                        <input value="1" id="input-1" min="0">
+                        <i class="fa-solid fa-plus user-select-none"></i>
+                      </div>
+                    </td>
+                    <td>$55.00</td>
+                    <td><i class="lnr lnr-cross close-btn_2"></i></td>
+                  </tr>
+                  <tr class="table-row close-3">
+                    <td scope="row">
+                      <div class="img-cart-in-table">
+                        <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img3.jpg" alt="ERROR"></a>
+                      </div>
+                    </td>
+                    <td><a href="#">woman full sliv dress</a></td>
+                    <td>$68.00</td>
+                    <td>
+                      <div class="input-add input-add-3">
+                        <i class="fa-solid fa-minus user-select-none"></i>
+                        <input value="1" id="input-2" min="0">
+                        <i class="fa-solid fa-plus user-select-none"></i>
+                      </div>
+                    </td>
+                    <td>$204.00</td>
+                    <td><i class="lnr lnr-cross close-btn_3"></i></td>
+                  </tr>
+                  <tr class="table-row close-4">
+                    <td scope="row">
+                      <div class="img-cart-in-table">
+                        <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img4.jpg" alt="ERROR"></a>
+                      </div>
+                    </td>
+                    <td><a href="#">Blue Dress For Woman</a></td>
+                    <td>$45.00</td>
+                    <td>
+                      <div class="input-add input-add-4">
+                        <i class="fa-solid fa-minus user-select-none"></i>
+                        <input value="1" id="input-3" min="0">
+                        <i class="fa-solid fa-plus user-select-none"></i>
+                      </div>
+                    </td>
+                    <td>$90.00</td>
+                    <td><i class="lnr lnr-cross close-btn_4"></i></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <form action="#">
+                        <div class="input-group">
+                          <input type="text" style="width: 60%;margin-bottom: 0px;border-radius: 5px 0px 0px 5px;" class="form-control" id="email" placeholder="Enter Couupon Code.." aria-label="Recipient's username with two button addons">
+                          <button style="width: 40%;margin-bottom: 0px; border-radius: 0px 5px 5px 0px;" id="btn" type="button">Apply Coupons</button>
+                        </div>
+                      </form>
+                    </td>
+                    <td colspan="4" style="text-align: right;">
+                      <button style="width: 30%;border-radius: 5px;margin-bottom: 0px;" id="btn">Update Cart</button>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-12 d-block d-xl-none">
+            <div class="container">
+              <div class="row">
                 <div class="col-12">
-                    <table class="table">
-                        <thead style="text-align: center;">
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col" style="text-align: left;">Product</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Total</th>
-                                <th scope="col">Remove</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="table-row close-1">
-                                <td scope="row">
-                                    <div class="img-cart-in-table">
-                                       <a href="#"> <img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img1.jpg" alt="ERROR"></a>
-                                    </div>
-                                </td>
-                                <td><a href="#">Blue Dress For Woman</a></td>
-                                <td>$45.00</td>
-                                <td>
-                                    <div class="input-add input-add-1">
-                                        <i class="fa-solid fa-minus user-select-none"></i>
-                                        <input value="1" id="input" min="0">
-                                        <i class="fa-solid fa-plus user-select-none"></i>
-                                    </div>
-                                </td>
-                                <td>$90.00</td>
-                                <td><i class="lnr lnr-cross close-btn_1"></i></td>
-                            </tr>
-                            <tr class="table-row close-2">
-                                <td scope="row">
-                                    <div class="img-cart-in-table">
-                                       <a href="#"> <img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img2.jpg" alt="ERROR"></a>
-                                    </div>
-                                </td>
-                                <td><a href="#">Lether Gray Tuxedo</a></td>
-                                <td>$55.00</td>
-                                <td>
-                                    <div class="input-add input-add-2">
-                                        <i class="fa-solid fa-minus user-select-none"></i>
-                                        <input value="1" id="input-1" min="0">
-                                        <i class="fa-solid fa-plus user-select-none"></i>
-                                    </div>
-                                </td>
-                                <td>$55.00</td>
-                                <td><i class="lnr lnr-cross close-btn_2"></i></td>
-                            </tr>
-                            <tr class="table-row close-3">
-                                <td scope="row">
-                                    <div class="img-cart-in-table">
-                                        <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img3.jpg" alt="ERROR"></a>
-                                    </div>
-                                </td>
-                                <td><a href="#">woman full sliv dress</a></td>
-                                <td>$68.00</td>
-                                <td>
-                                    <div class="input-add input-add-3">
-                                        <i class="fa-solid fa-minus user-select-none"></i>
-                                        <input value="1" id="input-2" min="0">
-                                        <i class="fa-solid fa-plus user-select-none"></i>
-                                    </div>
-                                </td>
-                                <td>$204.00</td>
-                                <td><i class="lnr lnr-cross close-btn_3"></i></td>
-                            </tr>
-                            <tr class="table-row close-4">
-                                <td scope="row">
-                                    <div class="img-cart-in-table">
-                                       <a href="#"><img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img4.jpg" alt="ERROR"></a>
-                                    </div>
-                                </td>
-                                <td><a href="#">Blue Dress For Woman</a></td>
-                                <td>$45.00</td>
-                                <td>
-                                    <div class="input-add input-add-4">
-                                        <i class="fa-solid fa-minus user-select-none"></i>
-                                        <input value="1" id="input-3" min="0">
-                                        <i class="fa-solid fa-plus user-select-none"></i>
-                                    </div>
-                                </td>
-                                <td>$90.00</td>
-                                <td><i class="lnr lnr-cross close-btn_4"></i></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <form action="#">
-                                        <div class="input-group">
-                                            <input type="text" style="width: 60%;margin-bottom: 0px;border-radius: 5px 0px 0px 5px;" class="form-control" id="email" placeholder="Enter Couupon Code.." aria-label="Recipient's username with two button addons">
-                                            <button style="width: 50%;margin-bottom: 0px; border-radius: 0px 5px 5px 0px;" id="btn" type="button">Apply Coupons</button>
-                                            </div>
-                                    </form>
-                                </td>
-                                <td colspan="4" style="text-align: right;">
-                                    <button style="width: 50%;border-radius: 5px;margin-bottom: 0px;" id="btn">Update Cart</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                  <div class="phone-cart-img">
+                    <img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img1.jpg" alt="ERROR">
+                  </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 mt-4">
-                    <div class="Or-Option">
-                        <p><i class="lnr lnr-cart"></i></p>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="phone-cart-data mt-3">
+                    <div class="data-name">
+                      <p>Product</p>
                     </div>
+                    <div class="data-price">
+                      <p>Blue Dress For Woman</p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data">
+                    <div class="data-name">
+                      <p>Price</p>
+                    </div>
+                    <div class="data-price">
+                      <p><span>$45.00</span></p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data" style="padding-top: 0px;">
+                    <div class="data-name">
+                      <p style="padding-top: 23%;">Quantity</p>
+                    </div>
+                    <div class="data-price">
+                      <p>
+                        <div style="margin-right: 30px;" class="input-add input-add-1-1">
+                        <i class="fa-solid fa-minus user-select-none"></i>
+                        <input value="1" id="input_1_1" min="0">
+                        <i class="fa-solid fa-plus user-select-none"></i>
+                      </div>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data">
+                    <div class="data-name">
+                      <p>Total</p>
+                    </div>
+                    <div class="data-price">
+                      <p><span>$55.00</span></p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data" style="border-bottom: 1px solid var(--card-align-icon-border);">
+                    <div class="data-name">
+                      <p>Remove</p>
+                    </div>
+                    <div class="data-price">
+                      <p><i class="lnr lnr-cross close-btn_1_1"></i></p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-12">
+                  <div class="phone-cart-img">
+                    <img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img2.jpg" alt="ERROR">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="phone-cart-data mt-3">
+                    <div class="data-name">
+                      <p>Product</p>
+                    </div>
+                    <div class="data-price">
+                      <p>Blue Dress For Woman</p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data">
+                    <div class="data-name">
+                      <p>Price</p>
+                    </div>
+                    <div class="data-price">
+                      <p><span>$45.00</span></p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data" style="padding-top: 0px;">
+                    <div class="data-name">
+                      <p style="padding-top: 23%;">Quantity</p>
+                    </div>
+                    <div class="data-price">
+                      <p>
+                        <div style="margin-right: 30px;" class="input-add input-add-1">
+                        <i class="fa-solid fa-minus user-select-none"></i>
+                        <input value="1" id="input" min="0">
+                        <i class="fa-solid fa-plus user-select-none"></i>
+                      </div>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data">
+                    <div class="data-name">
+                      <p>Total</p>
+                    </div>
+                    <div class="data-price">
+                      <p><span>$55.00</span></p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data" style="border-bottom: 1px solid var(--card-align-icon-border);">
+                    <div class="data-name">
+                      <p>Remove</p>
+                    </div>
+                    <div class="data-price">
+                      <p><i class="lnr lnr-cross close-btn_1_1"></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-12">
+                  <div class="phone-cart-img">
+                    <img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img3.jpg" alt="ERROR">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="phone-cart-data mt-3">
+                    <div class="data-name">
+                      <p>Product</p>
+                    </div>
+                    <div class="data-price">
+                      <p>Blue Dress For Woman</p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data">
+                    <div class="data-name">
+                      <p>Price</p>
+                    </div>
+                    <div class="data-price">
+                      <p><span>$45.00</span></p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data" style="padding-top: 0px;">
+                    <div class="data-name">
+                      <p style="padding-top: 23%;">Quantity</p>
+                    </div>
+                    <div class="data-price">
+                      <p>
+                        <div style="margin-right: 30px;" class="input-add input-add-1">
+                        <i class="fa-solid fa-minus user-select-none"></i>
+                        <input value="1" id="input" min="0">
+                        <i class="fa-solid fa-plus user-select-none"></i>
+                      </div>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data">
+                    <div class="data-name">
+                      <p>Total</p>
+                    </div>
+                    <div class="data-price">
+                      <p><span>$55.00</span></p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data" style="border-bottom: 1px solid var(--card-align-icon-border);">
+                    <div class="data-name">
+                      <p>Remove</p>
+                    </div>
+                    <div class="data-price">
+                      <p><i class="lnr lnr-cross close-btn_1_1"></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-12">
+                  <div class="phone-cart-img">
+                    <img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img4.jpg" alt="ERROR">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="phone-cart-data mt-3">
+                    <div class="data-name">
+                      <p>Product</p>
+                    </div>
+                    <div class="data-price">
+                      <p>Blue Dress For Woman</p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data">
+                    <div class="data-name">
+                      <p>Price</p>
+                    </div>
+                    <div class="data-price">
+                      <p><span>$45.00</span></p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data" style="padding-top: 0px;">
+                    <div class="data-name">
+                      <p style="padding-top: 23%;">Quantity</p>
+                    </div>
+                    <div class="data-price">
+                      <p>
+                        <div style="margin-right: 30px;" class="input-add input-add-1">
+                        <i class="fa-solid fa-minus user-select-none"></i>
+                        <input value="1" id="input" min="0">
+                        <i class="fa-solid fa-plus user-select-none"></i>
+                      </div>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data">
+                    <div class="data-name">
+                      <p>Total</p>
+                    </div>
+                    <div class="data-price">
+                      <p><span>$55.00</span></p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data" style="border-bottom: 1px solid var(--card-align-icon-border);">
+                    <div class="data-name">
+                      <p>Remove</p>
+                    </div>
+                    <div class="data-price">
+                      <p><i class="lnr lnr-cross close-btn_1_1"></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-12 mt-4">
+            <div class="Or-Option">
+              <p><i class="lnr lnr-cart"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- cart Section End -->
     <!-- Calculate Section Start -->
      <section>
         <div class="container">
             <div class="row">
-                <div class="col-12 mt-4">
+                <div class="col-12 col-md-6 mt-4">
                     <h5>Calculate Shipping</h5>
                     <div class="mt-3">
                         <select class="form-select" aria-label="Default select example">
@@ -753,10 +991,10 @@
                     <form action="#">
                         <input type="text" class="mt-3 form-control" style="width: 100%; border-radius: 5px;" id="email" placeholder="State / Country">
                         <input type="text" class="mt-3 form-control" style="width: 100%; border-radius: 5px;" id="email" placeholder="Postcode / Zip">
-                        <button style="width: 100%;border-radius: 5px;" id="btn">Update Totals</button>
+                        <button style="width: 50%;border-radius: 5px;" id="btn">Update Totals</button>
                     </form>
                 </div>
-                <div class="col-12 mt-4">
+                <div class="col-12 col-md-6 mt-4">
                     <div class="total">
                         <h5>Cart Totals</h5>
                           <ul class="list_group">

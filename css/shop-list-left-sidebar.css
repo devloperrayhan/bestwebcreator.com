@@ -243,3 +243,37 @@ td[colspan="4"][style="text-align: right;"] button{
     transition: all 0.3s;
     transform: translateY(45px);
 }
+.phone-cart-img{
+    text-align: center;
+}
+.phone-cart-img img{
+    height: 150px;
+}
+.phone-cart-data{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--card-align-icon-border);
+    padding-top: 15px;
+}
+.data-name p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.data-price p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.data-price p span{
+    font-weight: 800;
+    font-size: 16px;
+}
+.close-btn_1_1{
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 5px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}

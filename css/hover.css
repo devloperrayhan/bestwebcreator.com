@@ -345,3 +345,7 @@
     box-shadow: none;
     opacity: 1;
 }
+.close-btn_1_1:hover{
+    background-color: var(--a-hover-color);
+    color: var(--bg-color);
+}

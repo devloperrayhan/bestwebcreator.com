@@ -179,17 +179,32 @@ $(".input-add-4 .fa-solid.fa-plus").click(function(){
     $("#input-3").val(plus_3)
 });
 $(".close-btn_1").click(function() {
-    $(".close-1").slideToggle();
+    $(".close-1").fadeOut();
 });
 $(".close-btn_2").click(function(){
-    $(".close-2").slideToggle();
+    $(".close-2").fadeOut();
 });
 $(".close-btn_3").click(function(){
-    $(".close-3").slideToggle();
+    $(".close-3").fadeOut();
 });
 $(".close-btn_4").click(function(){
-    $(".close-4").slideToggle();
+    $(".close-4").fadeOut();
 });
 $(".close-btn_5").click(function(){
-    $(".close-5").slideToggle();
+    $(".close-5").fadeOut();
+});
+$(".data-price p i.lnr.lnr-cross").click(function(){
+    $(this).parent().parent().parent().parent().parent().parent().fadeOut();
+});
+$(".input-add-1-1 .fa-solid.fa-minus").click(function(){
+    let input_add_1_1 = $("#input_1_1").val()
+    input_add_1_1 --;
+    $("#input_1_1").val(input_add_1_1)
+    if(input_add_1_1 < 1)
+        $("#input_1_1").val(1)
+});
+$(".input-add-1-1 .fa-solid.fa-plus").click(function(){
+    let input_add_1_1_plus = $("#input_1_1").val()
+    input_add_1_1_plus ++;
+    $("#input_1_1").val(input_add_1_1_plus)
 });
