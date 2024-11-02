@@ -78,9 +78,9 @@
 
   <!-- Preloader Section Start -->
    <section>
-      <div id="preloader">
-          <div id="loader"></div>
-      </div>
+      <!-- <div id="preloader"> -->
+          <!-- <div id="loader"></div> -->
+      <!-- </div> -->
    </section>
   <!-- Preloader Section End -->
   <!-- Offline Msg -->
@@ -623,9 +623,9 @@
       <section>
         <div class="container">
             <div class="row">
-              <div class="col-9">
+              <div class="col-12 col-xl-9">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-sm-6 mb-sm-2">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Default sorting</option>
                             <option value="1">Sort by popularity</option>
@@ -633,19 +633,112 @@
                             <option value="3">Sort by price: low to high</option>
                             <option value="4">Sort by price: high to low</option>
                         </select>
-                      </div>
-                    <div class="col-5"></div>
-                    <div class="col-2 icon_card">
+                    </div>
+                    <div class="d-none d-lg-block col-lg-4"></div>
+                    <div class="col-12 col-lg-2 col-sm-6 mb-sm-2 mt-sm-0 mt-3 mb-2 icon_card">
                       <div class="align-card"><a href="#"><i class="lnr lnr-picture"></i></a></div>
                       <div class="align-card"><a href="#"><i class="lnr lnr-list"></i></a></div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-lg-3">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Showing</option>
                             <option value="1">9</option>
                             <option value="2">12</option>
                             <option value="3">18</option>
                         </select>
+                    </div>
+                    <div class="col-12 mt-2 d-xl-none d-block mb-2">
+                      <button id="btn" style="width: 100%;" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        Sidebar
+                      </button>
+                      
+                      <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div>
+                            <div class="col-12">
+                              <div class="left-sidebar">
+                                  <div class="left-sidebar-title">
+                                      <h5>Categories</h5>
+                                      <nav>
+                                          <ul class="category-of-left-sidebar">
+                                              <li><a href="#">Women</a><span>(9)</span></li>
+                                              <li><a href="#">Top</a><span>(6)</span></li>
+                                              <li><a href="#">T-Shirts</a><span>(4)</span></li>
+                                              <li><a href="#">Men</a><span>(7)</span></li>
+                                              <li><a href="#">Shoes</a><span>(12)</span></li>
+                                          </ul>
+                                      </nav>
+                                    </div>
+                                  <div class="Filter">
+                                      <h5>Filter</h5>
+              
+                                      <!-- Slider Problem Start -->
+                                      <input type="text" value="Slider Problem">
+                                      <!-- Silder Problem End -->
+              
+                                      <p>Price: <span>$0 - $411</span></p>
+                                  </div>
+                                  <div class="Brand">
+                                    <h5>Brand</h5>
+                                      <div class="checkbox">
+                                          <input type="checkbox" id="exampleCheck1.1" required>
+                                          <label class="form-check-label user-select-none" for="exampleCheck1.1">New Arrivals</label><br>
+                                          <input type="checkbox" id="exampleCheck1.2" required>
+                                          <label class="form-check-label user-select-none" for="exampleCheck1.2">Lighting</label><br>
+                                          <input type="checkbox" id="exampleCheck1.3" required>
+                                          <label class="form-check-label user-select-none" for="exampleCheck1.3">Tables</label><br>
+                                          <input type="checkbox" id="exampleCheck1.4" required>
+                                          <label class="form-check-label user-select-none" for="exampleCheck1.4">Chairs</label><br>
+                                          <input type="checkbox" id="exampleCheck1.5" required>
+                                          <label class="form-check-label user-select-none" for="exampleCheck1.5">Accessories</label><br>
+                                      </div>
+                                  </div>
+                                  <div class="size-main">
+                                    <h5>Size</h5>
+                                    <div class="size">
+                                        <div class="size-btn" style="margin-left: 0px;">
+                                            <span>XS</span>
+                                            <span>S</span>
+                                            <span>M</span>
+                                            <span>L</span>
+                                            <span>XL</span>
+                                            <span>2XL</span>
+                                            <span>3XL</span>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="color-main">
+                                      <h5>Color</h5>
+                                      <div class="color">
+                                          <div class="color-btn">
+                                            <div style="margin-left: 0px;"></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="txt-img-box-in-sidebar">
+                                    <div class="Collection" style="background-image: url('https://bestwebcreator.com/shopwise/demo/assets/images/sidebar_banner_img.jpg');">
+                                          <p>NEW COLLECTION</p>
+                                          <h5>SALE 30% OFF</h5>
+                                          <a href="#">Shop Now</a>
+                                    </div> 
+                                  </div>
+                              </div>
+                            </div>
+              
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
                 <div class="row mt-5">
@@ -1104,7 +1197,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-xl-3 d-none d-xl-block">
                 <div class="left-sidebar">
                     <div class="left-sidebar-title">
                         <h5>Categories</h5>
@@ -1188,8 +1281,8 @@
      <section>
       <div class="container mt-4">
         <div class="row">
-          <div class="col-3"></div>
-          <div class="col-2">
+          <div class="col-3 col-xl-5 col-xxl-3"></div>
+          <div class="col-2 col-xl-2 col-xxl-2">
             <nav aria-label="ERROR">
               <ul class="pagination">
                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
@@ -1203,7 +1296,7 @@
               </ul>
             </nav>
           </div>
-          <div class="col-6"></div>
+          <div class="col-6 col-xl-5 col-xxl-7"></div>
         </div>
       </div>
      </section>
@@ -1302,7 +1395,7 @@
   <!-- Copyright Footer Start -->
   <!-- Footer-section End -->
   <!-- Poppup Start -->
-     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+     <!-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body">
@@ -1331,7 +1424,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   <!-- Poppup End -->
 
   <!-- Boortstrap JS Start -->

@@ -1407,10 +1407,6 @@ footer{
   margin-bottom: 6px;
   padding: 10px 20px;
 }
-/* Popup CSS End */
-.offcanvas.offcanvas-end.show{
-  width: 100%;
-}
 .card {
   margin: 0px auto 40px auto;
 }
