@@ -179,25 +179,25 @@
 .breadcrumb-item :not(.active):hover{
     color: var(--a-hover-color) !important;
 }
-#text:focus{
+.text:focus{
     outline: var(--tran);
     border: 1px solid var(--a-hover-color);
 }
-#email:focus{
+.email:focus{
     outline: var(--tran);
     border: 1px solid var(--a-hover-color);
 }
-#w3review:focus{
+.w3review:focus{
     outline: var(--tran);
     border: 1px solid var(--a-hover-color);
 }
-#btn:hover::after{
+.btn:hover::after{
     width: 0%;
 }
-#btn:hover::before{
+.btn:hover::before{
     width: 0%;
 }
-#btn:hover{
+.btn:hover{
     color: var(--a-hover-color);
 }
 .input-add input[value]:focus{
@@ -323,6 +323,10 @@
     color: var(--a-hover-color);
 }
 .table-row td i[class]:hover{
+    background-color: var(--a-hover-color);
+    color: var(--bg-color);
+}
+.input-add i:hover{
     background-color: var(--a-hover-color);
     color: var(--bg-color);
 }

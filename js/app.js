@@ -1,4 +1,6 @@
-
+$(".toast-container #liveToast-offline button").click(function(){
+    location.reload();
+});
 function preloader(){
     $("#preloader").delay(5000).fadeOut();
 }
@@ -97,18 +99,6 @@ $(".size-btn span").click(function(){
     $(".size-btn span").removeClass("size-shadow");
     $(this).addClass("size-shadow");
 });
-$(".input-add-1 .fa-solid.fa-plus").click(function(){
-    let plus = $("#input").val()
-        plus ++ ;
-    $("#input").val(plus)
-});
-$(".input-add-1 .fa-solid.fa-minus").click(function(){
-    let minus = $("#input").val()
-        minus -- ;
-    $("#input").val(minus)
-    if(minus < 1)
-        $("#input").val(1)
-});
 // About Carousel js Start
 var owl = $('.owl-carousel-About');
 owl.owlCarousel({
@@ -126,11 +116,11 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 });
-$(document).ready(function(){
-    setTimeout(function(){
-        $("#exampleModalToggle").modal('show');
-    },7000)
-});
+// $(document).ready(function(){
+    // setTimeout(function(){
+        // $("#exampleModalToggle").modal('show');
+    // },7000)
+// });
 $(".nav-item.dropdown .nav-link").click(function(){
     $(this).next(".dropdown-menu").slideToggle();
 });
@@ -141,70 +131,119 @@ $(".nav-item.dropdown .nav-link").click(function(){
 $(".xzoom, .xzoom-gallery").xzoom({
     position: 'inside'
 });
-$(".input-add-2 .fa-solid.fa-minus").click(function(){
-    let minus_1 = $("#input-1").val()
-    minus_1 --;
-    $("#input-1").val(minus_1)
-    if(minus_1 < 1)
-        $("#input-1").val(1)
-});
-$(".input-add-2 .fa-solid.fa-plus").click(function(){
-    let plus_1 = $("#input-1").val()
-    plus_1 ++;
-    $("#input-1").val(plus_1)
-    
-});
-$(".input-add-3 .fa-solid.fa-minus").click(function(){
-    let minus_2 = $("#input-2").val()
-    minus_2 --;
-    $("#input-2").val(minus_2)
-    if (minus_2 < 1)
-        $("#input-2").val(1)
-});
-$(".input-add-3 .fa-solid.fa-plus").click(function(){
-    let plus_2 = $("#input-2").val()
-    plus_2 ++;
-    $("#input-2").val(plus_2)
-});
-$(".input-add-4 .fa-solid.fa-minus").click(function(){
-    let minus_3 = $("#input-3").val()
-    minus_3 --;
-    $("#input-3").val(minus_3)
-    if(minus_3 < 1)
-        $("#input-3").val(1)
-});
-$(".input-add-4 .fa-solid.fa-plus").click(function(){
-    let plus_3 = $("#input-3").val()
-    plus_3 ++;
-    $("#input-3").val(plus_3)
-});
-$(".close-btn_1").click(function() {
-    $(".close-1").fadeOut();
-});
-$(".close-btn_2").click(function(){
-    $(".close-2").fadeOut();
-});
-$(".close-btn_3").click(function(){
-    $(".close-3").fadeOut();
-});
-$(".close-btn_4").click(function(){
-    $(".close-4").fadeOut();
-});
-$(".close-btn_5").click(function(){
-    $(".close-5").fadeOut();
+$(".table-row td i.lnr.lnr-cross").click(function() {
+    $(this).parent().parent().fadeOut()
 });
 $(".data-price p i.lnr.lnr-cross").click(function(){
     $(this).parent().parent().parent().parent().parent().parent().fadeOut();
 });
-$(".input-add-1-1 .fa-solid.fa-minus").click(function(){
-    let input_add_1_1 = $("#input_1_1").val()
-    input_add_1_1 --;
-    $("#input_1_1").val(input_add_1_1)
-    if(input_add_1_1 < 1)
-        $("#input_1_1").val(1)
+$(".input-add .fa-solid.fa-minus").click(function(){
+    let input = $(this).next()
+    let minus = input.val()
+    minus --;
+    input.val(minus)
+    if (minus < 1){
+        input.val(1)
+    }
 });
-$(".input-add-1-1 .fa-solid.fa-plus").click(function(){
-    let input_add_1_1_plus = $("#input_1_1").val()
-    input_add_1_1_plus ++;
-    $("#input_1_1").val(input_add_1_1_plus)
+$(".input-add .fa-solid.fa-plus").click(function(){
+    let input = $(this).prev()
+    let plus = input.val()
+    plus ++;
+    input.val(plus)
+});
+$("#add-new-product #add-button").click(function(){
+    let add_name = $("#add_name").val()
+    let add_number = $("#add_number").val()
+    // let add_file = $("#add_file").val()
+    let add_link = $("#add_link").val()
+    $("#a_dd-input").after(`
+        
+                <tr class="table-row">
+                    <td scope="row">
+                      <div class="img-cart-in-table">
+                        <a href="#"><img class="img-style" src="${add_link}" alt="ERROR"></a>
+                      </div>
+                    </td>
+                    <td><a href="#">${add_name}</a></td>
+                    <td>$68.00</td>
+                    <td>
+                      <div class="input-add">
+                        <i class="fa-solid fa-minus user-select-none"></i>
+                        <input value="${add_number}" id="input" min="0">
+                        <i class="fa-solid fa-plus user-select-none"></i>
+                      </div>
+                    </td>
+                    <td>$82.00</td>
+                    <td><i class="lnr lnr-cross"></i></td>
+                  </tr>
+            `)
+});
+$("#add-new-product #add-button_2").click(function(){
+    let add_name = $("#add_name").val()
+    let add_number = $("#add_number").val()
+    // let add_file = $("#add_file").val()
+    let add_link = $("#add_link").val()
+    $("#a_dd-input_2").after(`
+        
+                <div class="container mt-5">
+              <div class="row">
+                <div class="col-12">
+                  <div class="phone-cart-img">
+                    <img src="${add_link}" alt="ERROR">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="phone-cart-data mt-3">
+                    <div class="data-name">
+                      <p>Product</p>
+                    </div>
+                    <div class="data-price">
+                      <p>${add_name}</p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data">
+                    <div class="data-name">
+                      <p>Price</p>
+                    </div>
+                    <div class="data-price">
+                      <p><span>$82.00</span></p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data" style="padding-top: 0px;">
+                    <div class="data-name">
+                      <p style="padding-top: 23%;">Quantity</p>
+                    </div>
+                    <div class="data-price">
+                      <p>
+                        <div style="margin-right: 30px;" class="input-add">
+                        <i class="fa-solid fa-minus user-select-none"></i>
+                        <input value="${add_number}" id="input" min="0">
+                        <i class="fa-solid fa-plus user-select-none"></i>
+                      </div>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data">
+                    <div class="data-name">
+                      <p>Total</p>
+                    </div>
+                    <div class="data-price">
+                      <p><span>$52.00</span></p>
+                    </div>
+                  </div>
+                  <div class="phone-cart-data" style="border-bottom: 1px solid var(--card-align-icon-border);">
+                    <div class="data-name">
+                      <p>Remove</p>
+                    </div>
+                    <div class="data-price">
+                      <p><i class="lnr lnr-cross close-btn_1_1"></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            `)
 });

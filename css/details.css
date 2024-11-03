@@ -126,7 +126,7 @@ div#pills-tabContent{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#w3review{
+.w3review{
     font-size: 19px;
     font-weight: 400;
     color: var(--tab-txt);
@@ -136,7 +136,7 @@ div#pills-tabContent{
     border-radius: 0px;
     border: 1px solid var(--main-color);
 }
-#text{
+.text{
     width: 49%;
     font-size: 19px;
     font-weight: 400;
@@ -147,7 +147,7 @@ div#pills-tabContent{
     border-radius: 0px;
     border: 1px solid var(--main-color);
 }
-#email{
+.email{
     width: 49%;
     font-size: 19px;
     font-weight: 400;
@@ -157,7 +157,7 @@ div#pills-tabContent{
     border-radius: 0px;
     border: 1px solid var(--main-color);
 }
-#btn{
+.btn{
     width: 15%;
     height: 45px;
     background-color: var(--bg-color);
@@ -169,9 +169,10 @@ div#pills-tabContent{
     position: relative;
     z-index: 1;
     transition: all 0.3s;
-    border: 1px solid var(--a-hover-color);
+    border: 1px solid var(--a-hover-color) !important;
+    border-radius: 0px;
 }
-#btn::after{
+.btn::after{
     content: "";
     position: absolute;
     top: 0px;
@@ -182,7 +183,7 @@ div#pills-tabContent{
     z-index: -1;
     transition: all 0.3s;
 }
-#btn::before{
+.btn::before{
     content: "";
     position: absolute;
     top: 0px;

@@ -277,3 +277,38 @@ td[colspan="4"][style="text-align: right;"] button{
     border-radius: 50px;
     transition: all 0.3s;
 }
+.file{
+    cursor: pointer;
+}
+.file::-webkit-file-upload-button{
+    background-color: var(--a-hover-color);
+    height: 150%;
+    width: 67%;
+    margin-bottom: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bg-color);
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.3s;
+    border: 1px solid var(--a-hover-color);
+}
+.file::-webkit-file-upload-button:hover{
+    background-color: var(--bg-color);
+    color: var(--a-hover-color);
+}
+.list_Lorem{
+    padding-left: 0rem;
+}
+.list_Lorem li{
+    list-style: none;
+    font-size: 17px;
+    font-weight: 400;
+}
+.list_Lorem li i{
+    color: var(--a-hover-color);
+    margin-right: 5px;
+}

@@ -1526,3 +1526,6 @@ footer{
       transform: rotate(360deg);
   }
 }
+.input-add i{
+  transition: all 0.3s;
+}
