@@ -1529,3 +1529,6 @@ footer{
 .input-add i{
   transition: all 0.3s;
 }
+.null-toast-img{
+  height: 25px;
+}

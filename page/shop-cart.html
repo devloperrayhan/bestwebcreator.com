@@ -78,9 +78,9 @@
 
   <!-- Preloader Section Start -->
    <section>
-      <div id="preloader">
-          <div id="loader"></div>
-      </div>
+      <!-- <div id="preloader"> -->
+          <!-- <div id="loader"></div> -->
+      <!-- </div> -->
    </section>
   <!-- Preloader Section End -->
   <!-- Offline Msg -->
@@ -973,9 +973,9 @@
         </div>
         <div class="row mt-4" id="add-new-product">
           <div class="col-12 col-md-6">
-            <form action="#">
-              <input style="width: 100%;" class="text" id="add_number" type="text" placeholder="Product Number" required><br>
-              <select style="width: 100%;" class="form-select text" id="add_name" aria-label="Default select example" required>
+            <form action="javascript:void(0);">
+              <input style="width: 100%;" class="text" id="add_number" type="text" placeholder="Product Number"><br>
+              <select style="width: 100%;" class="form-select text" id="add_name" aria-label="Default select example">
                 <option selected>Seclect Product</option>
                 <option value="T-Shirts">T-Shirts</option>
                 <option value="Hoodies">Hoodies</option>
@@ -990,7 +990,7 @@
               </select>
               <br>
               <input class="file" type="file" id="add_file" placeholder="Uplode Image"><br>
-              <input style="width: 100%;" class="text" type="text" id="add_link" placeholder="Link Image" required><br>
+              <input style="width: 100%;" class="text" type="text" id="add_link" placeholder="Link Image"><br>
               <button style="width: 100%;" class="btn d-none d-xl-block" id="add-button">Add Product</button>
               <button style="width: 100%;" class="btn d-block d-xl-none" id="add-button_2">Add Product</button>
             </form>
@@ -1007,6 +1007,21 @@
             </ul>
           </div>
         </div>
+        <!-- Null Msg Section Start -->
+        <section>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast null-toast-add" role="alert" aria-live="assertive" aria-atomic="true" style="border-radius: 0px;border: none;">
+              <div class="toast-header">
+                <img src="https://bestwebcreator.com/shopwise/demo/assets/images/logo_dark.png" class="rounded me-2 null-toast-img" alt="ERROR">
+                <strong class="me-auto"></strong>
+                <small>1 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body null-toast-txt"></div>
+            </div>
+          </div>
+        </section>
+        <!-- Null Msg Section End -->
         <!-- Add Product End -->
         <div class="row">
           <div class="col-12 mt-4">

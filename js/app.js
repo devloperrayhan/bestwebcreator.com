@@ -116,11 +116,11 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 });
-$(document).ready(function(){
-    setTimeout(function(){
-        $("#exampleModalToggle").modal('show');
-    },7000)
-});
+// $(document).ready(function(){
+    // setTimeout(function(){
+        // $("#exampleModalToggle").modal('show');
+    // },7000)
+// });
 $(".nav-item.dropdown .nav-link").click(function(){
     $(this).next(".dropdown-menu").slideToggle();
 });
@@ -134,29 +134,53 @@ $(".xzoom, .xzoom-gallery").xzoom({
 $(".table-row td i.lnr.lnr-cross").click(function() {
     $(this).parent().parent().fadeOut()
 });
-$(".data-price p i.lnr.lnr-cross").click(function(){
+$(".data-price p i.lnr.lnr-cross").on("Click",function(){
     $(this).parent().parent().parent().parent().parent().parent().fadeOut();
 });
-$(".input-add .fa-solid.fa-minus").click(function(){
-    let input = $(this).next()
-    let minus = input.val()
-    minus --;
-    input.val(minus)
-    if (minus < 1){
-        input.val(1)
-    }
+$(".input-add .fa-solid.fa-minus").on("click",function(){
+  let input = $(this).next()
+  let minus = input.val()
+  minus --;
+  input.val(minus)
+  if (minus < 1){
+      input.val(1)
+  }
 });
-$(".input-add .fa-solid.fa-plus").click(function(){
-    let input = $(this).prev()
-    let plus = input.val()
-    plus ++;
-    input.val(plus)
+$(".input-add .fa-solid.fa-plus").on("click",function(){
+  let input = $(this).prev()
+  let plus = input.val()
+  plus ++;
+  input.val(plus)
 });
-$("#add-new-product #add-button").click(function(){
+  $("#add-new-product #add-button").on("click",function(){
+    // let file = document.getElementById("add_file").files[0];
+    // let file_link = window.URL.createObjectURL(file);
     let add_name = $("#add_name").val()
     let add_number = $("#add_number").val()
-    // let add_file = $("#add_file").val()
     let add_link = $("#add_link").val()
+
+    if(add_number == "" || 0){
+       $(".null-toast-add").fadeIn();
+       $(".null-toast-txt").text("Please Enter Product Number")
+       setTimeout(function(){
+        $(".null-toast-add").fadeOut();
+      },2000)
+      return ;
+    }else if(add_name == "Seclect Product"){
+        $(".null-toast-add").fadeIn();
+        $(".null-toast-txt").text("Please Enter Product Name")
+        setTimeout(function(){
+         $(".null-toast-add").fadeOut();
+        },2000)
+        return ;
+      }else if(add_link == ""){
+        $(".null-toast-add").fadeIn();
+        $(".null-toast-txt").text("Please Enter Product Link")
+        setTimeout(function(){
+          $(".null-toast-add").fadeOut();
+        },2000)
+        return ;
+      }
     $("#a_dd-input").after(`
         
                 <tr class="table-row">
@@ -176,21 +200,47 @@ $("#add-new-product #add-button").click(function(){
                     </td>
                     <td>$82.00</td>
                     <td><i class="lnr lnr-cross"></i></td>
-                  </tr>
+                </tr>
             `)
 });
-$("#add-new-product #add-button_2").click(function(){
+
+$("#add-new-product #add-button_2").on("click",function(){
     let add_name = $("#add_name").val()
     let add_number = $("#add_number").val()
-    // let add_file = $("#add_file").val()
+     let file = document.getElementById("add_file").files[0];
+    let file_link = window.URL.createObjectURL(file);
     let add_link = $("#add_link").val()
+
+    // if(add_number == "" || 0){
+    //    $(".null-toast-add").fadeIn();
+    //    $(".null-toast-txt").text("Please Enter Product Number")
+    //    setTimeout(function(){
+    //     $(".null-toast-add").fadeOut();
+    //   },2000)
+    //   return ;
+
+    // }else if(add_name == "Seclect Product"){
+    //     $(".null-toast-add").fadeIn();
+    //     $(".null-toast-txt").text("Please Enter Product Name")
+    //     setTimeout(function(){
+    //      $(".null-toast-add").fadeOut();
+    //     },2000)
+    //     return ;
+    //   }else if(add_link == ""){
+    //     $(".null-toast-add").fadeIn();
+    //     $(".null-toast-txt").text("Please Enter Product Link")
+    //     setTimeout(function(){
+    //       $(".null-toast-add").fadeOut();
+    //     },2000)
+    //     return ;
+    // }
     $("#a_dd-input_2").after(`
         
                 <div class="container mt-5">
               <div class="row">
                 <div class="col-12">
                   <div class="phone-cart-img">
-                    <img src="${add_link}" alt="ERROR">
+                    <img src="${file_link}" alt="ERROR">
                   </div>
                 </div>
               </div>
