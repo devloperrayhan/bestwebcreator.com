@@ -1532,3 +1532,6 @@ footer{
 .null-toast-img{
   height: 25px;
 }
+.nav-item.BLOG.dropdown.Home{
+  cursor: pointer;
+}

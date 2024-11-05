@@ -131,13 +131,13 @@ $(".nav-item.dropdown .nav-link").click(function(){
 $(".xzoom, .xzoom-gallery").xzoom({
     position: 'inside'
 });
-$(".table-row td i.lnr.lnr-cross").click(function() {
-    $(this).parent().parent().fadeOut()
+$(document).on("click",".table-row td i.lnr.lnr-cross",function(){
+    $(this).parent().parent().fadeOut(); 
 });
 $(".data-price p i.lnr.lnr-cross").on("Click",function(){
     $(this).parent().parent().parent().parent().parent().parent().fadeOut();
 });
-$(".input-add .fa-solid.fa-minus").on("click",function(){
+$(document).on("click",".input-add .fa-solid.fa-minus",function(){
   let input = $(this).next()
   let minus = input.val()
   minus --;
@@ -146,13 +146,13 @@ $(".input-add .fa-solid.fa-minus").on("click",function(){
       input.val(1)
   }
 });
-$(".input-add .fa-solid.fa-plus").on("click",function(){
+$(document).on("click",".input-add .fa-solid.fa-plus",function(){
   let input = $(this).prev()
   let plus = input.val()
   plus ++;
   input.val(plus)
 });
-  $("#add-new-product #add-button").on("click",function(){
+  $("#add-new-product #add-button").click(function(){
     // let file = document.getElementById("add_file").files[0];
     // let file_link = window.URL.createObjectURL(file);
     let add_name = $("#add_name").val()
@@ -204,7 +204,7 @@ $(".input-add .fa-solid.fa-plus").on("click",function(){
             `)
 });
 
-$("#add-new-product #add-button_2").on("click",function(){
+$("#add-new-product #add-button_2").click(function(){
     let add_name = $("#add_name").val()
     let add_number = $("#add_number").val()
      let file = document.getElementById("add_file").files[0];
