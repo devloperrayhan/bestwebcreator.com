@@ -134,7 +134,7 @@ $(".xzoom, .xzoom-gallery").xzoom({
 $(document).on("click",".table-row td i.lnr.lnr-cross",function(){
     $(this).parent().parent().fadeOut(); 
 });
-$(".data-price p i.lnr.lnr-cross").on("Click",function(){
+$(document).on("click",".data-price p i.lnr.lnr-cross",function(){
     $(this).parent().parent().parent().parent().parent().parent().fadeOut();
 });
 $(document).on("click",".input-add .fa-solid.fa-minus",function(){
