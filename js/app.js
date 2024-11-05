@@ -146,6 +146,12 @@ $(document).on("click",".input-add .fa-solid.fa-minus",function(){
       input.val(1)
   }
 });
+$("#add_file").click(function(){
+  $("#add_link").fadeOut();
+});
+$("#add_link").click(function(){
+  $("#add_file").fadeOut();
+});
 $(document).on("click",".input-add .fa-solid.fa-plus",function(){
   let input = $(this).prev()
   let plus = input.val()
@@ -153,15 +159,19 @@ $(document).on("click",".input-add .fa-solid.fa-plus",function(){
   input.val(plus)
 });
   $("#add-new-product #add-button").click(function(){
-    // let file = document.getElementById("add_file").files[0];
-    // let file_link = window.URL.createObjectURL(file);
     let add_name = $("#add_name").val()
     let add_number = $("#add_number").val()
     let add_link = $("#add_link").val()
-
-    if(add_number == "" || 0){
+    let file = document.getElementById("add_file").files[0];
+    if (file) {
+        let link = window.URL.createObjectURL(file);
+        add_link = link
+    }else{
+        add_link = add_link
+    }
+    if(add_number == "" || add_number == 0){
        $(".null-toast-add").fadeIn();
-       $(".null-toast-txt").text("Please Enter Product Number")
+       $(".null-toast-txt").text("Please Enter Product Quantity")
        setTimeout(function(){
         $(".null-toast-add").fadeOut();
       },2000)
@@ -175,7 +185,7 @@ $(document).on("click",".input-add .fa-solid.fa-plus",function(){
         return ;
       }else if(add_link == ""){
         $(".null-toast-add").fadeIn();
-        $(".null-toast-txt").text("Please Enter Product Link")
+        $(".null-toast-txt").text("Please Enter Product Link Or File")
         setTimeout(function(){
           $(".null-toast-add").fadeOut();
         },2000)
@@ -201,46 +211,47 @@ $(document).on("click",".input-add .fa-solid.fa-plus",function(){
                     <td>$82.00</td>
                     <td><i class="lnr lnr-cross"></i></td>
                 </tr>
-            `)
+          `)
 });
-
 $("#add-new-product #add-button_2").click(function(){
     let add_name = $("#add_name").val()
     let add_number = $("#add_number").val()
-     let file = document.getElementById("add_file").files[0];
-    let file_link = window.URL.createObjectURL(file);
     let add_link = $("#add_link").val()
-
-    // if(add_number == "" || 0){
-    //    $(".null-toast-add").fadeIn();
-    //    $(".null-toast-txt").text("Please Enter Product Number")
-    //    setTimeout(function(){
-    //     $(".null-toast-add").fadeOut();
-    //   },2000)
-    //   return ;
-
-    // }else if(add_name == "Seclect Product"){
-    //     $(".null-toast-add").fadeIn();
-    //     $(".null-toast-txt").text("Please Enter Product Name")
-    //     setTimeout(function(){
-    //      $(".null-toast-add").fadeOut();
-    //     },2000)
-    //     return ;
-    //   }else if(add_link == ""){
-    //     $(".null-toast-add").fadeIn();
-    //     $(".null-toast-txt").text("Please Enter Product Link")
-    //     setTimeout(function(){
-    //       $(".null-toast-add").fadeOut();
-    //     },2000)
-    //     return ;
-    // }
+    let file = document.getElementById("add_file").files[0];
+    if (file) {
+      let link = window.URL.createObjectURL(file);
+      add_link = link
+    }else{
+      add_link = add_link
+    }
+    if(add_number == "" || add_number == 0){
+       $(".null-toast-add").fadeIn();
+       $(".null-toast-txt").text("Please Enter Product Quantity")
+       setTimeout(function(){
+        $(".null-toast-add").fadeOut();
+      },2000)
+      return ;
+    }else if(add_name == "Seclect Product"){
+        $(".null-toast-add").fadeIn();
+        $(".null-toast-txt").text("Please Enter Product Name")
+        setTimeout(function(){
+         $(".null-toast-add").fadeOut();
+        },2000)
+        return ;
+      }else if(add_link == ""){
+        $(".null-toast-add").fadeIn();
+        $(".null-toast-txt").text("Please Enter Product Link Or File")
+        setTimeout(function(){
+          $(".null-toast-add").fadeOut();
+        },2000)
+        return ;
+    }
     $("#a_dd-input_2").after(`
-        
-                <div class="container mt-5">
+              <div class="container mt-5">
               <div class="row">
                 <div class="col-12">
                   <div class="phone-cart-img">
-                    <img src="${file_link}" alt="ERROR">
+                    <img src="${add_link}" alt="ERROR">
                   </div>
                 </div>
               </div>
