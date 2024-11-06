@@ -1535,3 +1535,7 @@ footer{
 .nav-item.BLOG.dropdown.Home{
   cursor: pointer;
 }
+footer .container .row .row i{
+  display: inline-block;
+  margin-bottom: 20px;
+}
