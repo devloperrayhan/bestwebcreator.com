@@ -315,7 +315,7 @@ i{
   opacity: 0;
   visibility: hidden;
 }
-#Search{
+.Search{
   width: 300px;
   height: 40px;
   border: none;
@@ -328,13 +328,13 @@ i{
   opacity: 0;
   visibility: hidden;
 }
-#Search:focus{
+.Search:focus{
   outline: transparent;
 }
 .search img{
   padding: 10px;
 }
-#SearchBtn{
+.SearchBtn{
   width: 100px;
   height: 40px;
   background-color: var(--a-hover-color);
@@ -349,7 +349,7 @@ i{
   opacity: 0;
   visibility: hidden;
 }
-#SearchBtn::after{
+.SearchBtn::after{
   content: "";
   position: absolute;
   top: 0px;
@@ -360,7 +360,7 @@ i{
   z-index: -1;
   transition: all 0.5s;
 }
-#SearchBtn::before{
+.SearchBtn::before{
   content: "";
   position: absolute;
   top: 0px;

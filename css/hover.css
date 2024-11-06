@@ -42,13 +42,13 @@
 .chair a:hover::after{
     width: 100%;
 }
-#SearchBtn:hover{
+.SearchBtn:hover{
     color: var( --main-color);
 }
-#SearchBtn:hover::after{
+.SearchBtn:hover::after{
     width: 0%;
 }
-#SearchBtn:hover::before{
+.SearchBtn:hover::before{
     width: 0%;
 }
 .search-pos:hover .search{
@@ -56,7 +56,7 @@
     opacity: 1;
     visibility: visible;
 }
-.search-pos:hover #SearchBtn,.search-pos:hover #Search,.search-pos:hover .search-icon,.search-pos:hover .search{
+.search-pos:hover .SearchBtn,.search-pos:hover .Search,.search-pos:hover .search-icon,.search-pos:hover .search{
     opacity: 1;
     visibility: visible;
 }
