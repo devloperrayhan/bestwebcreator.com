@@ -1539,3 +1539,15 @@ footer .container .row .row i{
   display: inline-block;
   margin-bottom: 20px;
 }
+.screenshot-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999999;
+  transition: opacity 0.2s ease-in-out;
+}

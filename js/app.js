@@ -308,3 +308,35 @@ $("#add-new-product #add-button_2").click(function(){
             </div>
             `)
 });
+document.addEventListener("keyup", function (e) {
+  if (e.key === "PrintScreen") {
+      let overlay = document.createElement("div");
+      overlay.className = "screenshot-block";
+      document.body.appendChild(overlay);
+      overlay.style.opacity = "1";
+      setTimeout(() => {
+          overlay.style.opacity = "0";
+          document.body.removeChild(overlay);
+      }, 2000);
+  }
+});document.addEventListener("keyup", function (e) {
+  if (e.key === "PrintScreen") {
+      navigator.clipboard.writeText(""); // Clears clipboard
+      alert("Screenshots are not allowed!");
+  }
+});
+setInterval(() => {
+  if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
+      document.body.innerHTML = "<h1 style='color:red;text-align:center;'>⚠ Screenshots & Recording Are Not Allowed! Rules By Developer Rayhan. ⚠</h1>";
+  }
+}, 1000);
+if (navigator.userAgent.match(/Android|iPhone|iPad|iPod/i)) {
+  document.addEventListener("visibilitychange", function () {
+      if (document.hidden) {
+          document.body.style.display = "none";
+          setTimeout(() => {
+              document.body.style.display = "block";
+          }, 2000);
+      }
+  });
+}

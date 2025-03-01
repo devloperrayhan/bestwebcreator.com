@@ -345,3 +345,8 @@
         padding-right: 27px !important;
     }
 }
+@media print{
+    html{
+        display: none;
+    }
+}
